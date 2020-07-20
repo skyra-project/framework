@@ -1,1 +1,1 @@
-{"kinds":{},"rows":[],"index":{"version":"2.3.8","fields":["name","parent"],"fieldVectors":[],"invertedIndex":[],"pipeline":[]}}
+{"kinds":{"64":"Function"},"rows":[{"id":0,"kind":64,"name":"main","url":"globals.html#main","classes":"tsd-kind-function"}],"index":{"version":"2.3.8","fields":["name","parent"],"fieldVectors":[["name/0",[0,2.877]],["parent/0",[]]],"invertedIndex":[["main",{"_index":0,"name":{"0":{}},"parent":{}}]],"pipeline":[]}}
