@@ -69,7 +69,7 @@
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
-						<dd><p>0.0.1</p>
+						<dd><p>1.0.0</p>
 						</dd>
 					</dl>
 				</div>
@@ -102,6 +102,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="monitorstore.html#holds" class="tsd-kind-icon">Holds</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="monitorstore.html#client" class="tsd-kind-icon">client</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="monitorstore.html#coredirectories" class="tsd-kind-icon">core<wbr>Directories</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="monitorstore.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="monitorstore.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
@@ -168,7 +169,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Store.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/structures/MonitorStore.ts#L10">src/lib/structures/MonitorStore.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/structures/MonitorStore.ts#L10">src/lib/structures/MonitorStore.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +178,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
-									<dd><p>0.0.1</p>
+									<dd><p>1.0.0</p>
 									</dd>
 								</dl>
 							</div>
@@ -233,6 +234,27 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The client this Store was created with.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>0.0.1</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="coredirectories" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> core<wbr>Directories</h3>
+					<div class="tsd-signature tsd-kind-icon">core<wbr>Directories<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="commandstore.html">CommandStore</a>.<a href="commandstore.html#coredirectories">coreDirectories</a></p>
+						<ul>
+							<li>Defined in node_modules/@klasa/core/dist/src/lib/pieces/base/Store.d.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The core directories pieces of this store can hold.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>since</dt>
@@ -1656,6 +1678,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/cooldownlevel.html" class="tsd-kind-icon">Cooldown<wbr>Level</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="command.html" class="tsd-kind-icon">Command</a>
 					</li>
@@ -1678,6 +1703,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="monitorstore.html#client" class="tsd-kind-icon">client</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="monitorstore.html#coredirectories" class="tsd-kind-icon">core<wbr>Directories</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="monitorstore.html#name" class="tsd-kind-icon">name</a>
@@ -1800,8 +1828,35 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/commandoptions.html" class="tsd-kind-icon">Command<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#createclassdecorator" class="tsd-kind-icon">create<wbr>Class<wbr>Decorator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#createproxy" class="tsd-kind-icon">create<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignorebots" class="tsd-kind-icon">ignore<wbr>Bots</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignoreedits" class="tsd-kind-icon">ignore<wbr>Edits</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignoreothers" class="tsd-kind-icon">ignore<wbr>Others</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignoreself" class="tsd-kind-icon">ignore<wbr>Self</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignoreusers" class="tsd-kind-icon">ignore<wbr>Users</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#ignorewebhooks" class="tsd-kind-icon">ignore<wbr>Webhooks</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#main" class="tsd-kind-icon">main</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-private">
+						<a href="../globals.html#monitorignoreoptions" class="tsd-kind-icon">monitor<wbr>Ignore<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#commanddefaults" class="tsd-kind-icon">command<wbr>Defaults</a>

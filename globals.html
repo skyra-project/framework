@@ -64,6 +64,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum"><a href="enums/cooldownlevel.html" class="tsd-kind-icon">Cooldown<wbr>Level</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/command.html" class="tsd-kind-icon">Command</a></li>
@@ -81,7 +87,16 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#createclassdecorator" class="tsd-kind-icon">create<wbr>Class<wbr>Decorator</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#createproxy" class="tsd-kind-icon">create<wbr>Proxy</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignorebots" class="tsd-kind-icon">ignore<wbr>Bots</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignoreedits" class="tsd-kind-icon">ignore<wbr>Edits</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignoreothers" class="tsd-kind-icon">ignore<wbr>Others</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignoreself" class="tsd-kind-icon">ignore<wbr>Self</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignoreusers" class="tsd-kind-icon">ignore<wbr>Users</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#ignorewebhooks" class="tsd-kind-icon">ignore<wbr>Webhooks</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#main" class="tsd-kind-icon">main</a></li>
+								<li class="tsd-kind-function tsd-is-private"><a href="globals.html#monitorignoreoptions" class="tsd-kind-icon">monitor<wbr>Ignore<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -95,6 +110,480 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="createclassdecorator" class="tsd-anchor"></a>
+					<h3>create<wbr>Class<wbr>Decorator</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Class<wbr>Decorator&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassDecorator</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/skyra-decorators-utils.ts#L32">src/lib/utils/decorators/skyra-decorators-utils.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Utility to make a class decorator with lighter syntax and inferred types.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+									<dt>copyright</dt>
+									<dd><p>2018-2020 Kyra</p>
+									</dd>
+									<dt>license</dt>
+									<dd><p>MIT</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-type">TFunction</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class to decorate</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClassDecorator</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="createproxy" class="tsd-anchor"></a>
+					<h3>create<wbr>Proxy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Proxy&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProxyHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"get"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/skyra-decorators-utils.ts#L45">src/lib/utils/decorators/skyra-decorators-utils.ts:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new proxy to efficiently add properties to class without creating subclasses</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+									<dt>copyright</dt>
+									<dd><p>2018-2020 Kyra</p>
+									</dd>
+									<dt>license</dt>
+									<dd><p>MIT</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The constructor of the class to modify</p>
+									</div>
+								</li>
+								<li>
+									<h5>handler: <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProxyHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"get"</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The handler function to modify the constructor behaviour for the target</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignorebots" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Bots</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Bots<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L33">src/lib/utils/decorators/monitor.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore bots.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignoreedits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Edits</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Edits<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L68">src/lib/utils/decorators/monitor.ts:68</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore edits.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignoreothers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Others</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Others<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L54">src/lib/utils/decorators/monitor.ts:54</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore others.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignoreself" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Self</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Self<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L47">src/lib/utils/decorators/monitor.ts:47</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore its self.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignoreusers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Users</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Users<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L40">src/lib/utils/decorators/monitor.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore users.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ignorewebhooks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ignore<wbr>Webhooks</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ignore<wbr>Webhooks<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L61">src/lib/utils/decorators/monitor.ts:61</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Should the decorated monitor ignore webhooks.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Whether the given group should be ignored or not.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="main" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> main</h3>
@@ -105,10 +594,73 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/index.ts#L1">src/index.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/index.ts#L1">src/index.ts:1</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-private">
+					<a name="monitorignoreoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> monitor<wbr>Ignore<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">monitor<wbr>Ignore<wbr>Options<span class="tsd-signature-symbol">(</span>prop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/decorators/monitor.ts#L11">src/lib/utils/decorators/monitor.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prop: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property on which the status should be assigned.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> status: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Wheter the property should be ignored or not.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns &lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
+										<li class="tsd-signature tsd-kind-icon">&lt;TFunction&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-type-parameters-title">Type parameters</h4>
+											<ul class="tsd-type-parameters">
+												<li>
+													<h4>TFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+												</li>
+											</ul>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>target: <span class="tsd-signature-type">TFunction</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFunction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -121,7 +673,7 @@
 					<div class="tsd-signature tsd-kind-icon">command<wbr>Defaults<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L4">src/lib/util/constants.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L4">src/lib/utils/constants.ts:4</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -130,7 +682,7 @@
 						<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L5">src/lib/util/constants.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L5">src/lib/utils/constants.ts:5</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -140,7 +692,7 @@
 						<div class="tsd-signature tsd-kind-icon">bucket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L6">src/lib/util/constants.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L6">src/lib/utils/constants.ts:6</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -150,17 +702,17 @@
 						<div class="tsd-signature tsd-kind-icon">cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L7">src/lib/util/constants.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L7">src/lib/utils/constants.ts:7</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="commanddefaults.cooldownlevel" class="tsd-anchor"></a>
 						<h3>cooldown<wbr>Level</h3>
-						<div class="tsd-signature tsd-kind-icon">cooldown<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CooldownLevel</span><span class="tsd-signature-symbol"> = CooldownLevel.Author</span></div>
+						<div class="tsd-signature tsd-kind-icon">cooldown<wbr>Level<span class="tsd-signature-symbol">:</span> <a href="enums/cooldownlevel.html" class="tsd-signature-type">CooldownLevel</a><span class="tsd-signature-symbol"> = CooldownLevel.Author</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L8">src/lib/util/constants.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L8">src/lib/utils/constants.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -170,7 +722,7 @@
 						<div class="tsd-signature tsd-kind-icon">deletable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L25">src/lib/util/constants.ts:25</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L25">src/lib/utils/constants.ts:25</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -180,7 +732,7 @@
 						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L9">src/lib/util/constants.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L9">src/lib/utils/constants.ts:9</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -190,7 +742,7 @@
 						<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L11">src/lib/util/constants.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L11">src/lib/utils/constants.ts:11</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -200,7 +752,7 @@
 						<div class="tsd-signature tsd-kind-icon">extended<wbr>Help<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L10">src/lib/util/constants.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L10">src/lib/utils/constants.ts:10</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -210,7 +762,7 @@
 						<div class="tsd-signature tsd-kind-icon">flags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L12">src/lib/util/constants.ts:12</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L12">src/lib/utils/constants.ts:12</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -220,7 +772,7 @@
 						<div class="tsd-signature tsd-kind-icon">guarded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L13">src/lib/util/constants.ts:13</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L13">src/lib/utils/constants.ts:13</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -230,7 +782,7 @@
 						<div class="tsd-signature tsd-kind-icon">hidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L14">src/lib/util/constants.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L14">src/lib/utils/constants.ts:14</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -240,7 +792,7 @@
 						<div class="tsd-signature tsd-kind-icon">nsfw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L15">src/lib/util/constants.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L15">src/lib/utils/constants.ts:15</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -250,7 +802,7 @@
 						<div class="tsd-signature tsd-kind-icon">permission<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L16">src/lib/util/constants.ts:16</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L16">src/lib/utils/constants.ts:16</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -260,7 +812,7 @@
 						<div class="tsd-signature tsd-kind-icon">prompt<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L17">src/lib/util/constants.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L17">src/lib/utils/constants.ts:17</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -270,7 +822,7 @@
 						<div class="tsd-signature tsd-kind-icon">prompt<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 30000</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L18">src/lib/util/constants.ts:18</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L18">src/lib/utils/constants.ts:18</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -280,7 +832,7 @@
 						<div class="tsd-signature tsd-kind-icon">quoted<wbr>String<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L24">src/lib/util/constants.ts:24</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L24">src/lib/utils/constants.ts:24</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -290,7 +842,7 @@
 						<div class="tsd-signature tsd-kind-icon">required<wbr>Permissions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L20">src/lib/util/constants.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L20">src/lib/utils/constants.ts:20</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -300,7 +852,7 @@
 						<div class="tsd-signature tsd-kind-icon">required<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L19">src/lib/util/constants.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L19">src/lib/utils/constants.ts:19</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -310,7 +862,7 @@
 						<div class="tsd-signature tsd-kind-icon">run<wbr>In<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChannelType</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [ChannelType.GuildText, ChannelType.DM]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L21">src/lib/util/constants.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L21">src/lib/utils/constants.ts:21</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -320,7 +872,7 @@
 						<div class="tsd-signature tsd-kind-icon">usage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L22">src/lib/util/constants.ts:22</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L22">src/lib/utils/constants.ts:22</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -330,7 +882,7 @@
 						<div class="tsd-signature tsd-kind-icon">usage<wbr>Delim<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/88afac3/src/lib/util/constants.ts#L23">src/lib/util/constants.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/skyra-project/framework/blob/5d3accd/src/lib/utils/constants.ts#L23">src/lib/utils/constants.ts:23</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -347,6 +899,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/cooldownlevel.html" class="tsd-kind-icon">Cooldown<wbr>Level</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/command.html" class="tsd-kind-icon">Command</a>
 					</li>
@@ -362,8 +917,35 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/commandoptions.html" class="tsd-kind-icon">Command<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#createclassdecorator" class="tsd-kind-icon">create<wbr>Class<wbr>Decorator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#createproxy" class="tsd-kind-icon">create<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignorebots" class="tsd-kind-icon">ignore<wbr>Bots</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignoreedits" class="tsd-kind-icon">ignore<wbr>Edits</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignoreothers" class="tsd-kind-icon">ignore<wbr>Others</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignoreself" class="tsd-kind-icon">ignore<wbr>Self</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignoreusers" class="tsd-kind-icon">ignore<wbr>Users</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ignorewebhooks" class="tsd-kind-icon">ignore<wbr>Webhooks</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#main" class="tsd-kind-icon">main</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-private">
+						<a href="globals.html#monitorignoreoptions" class="tsd-kind-icon">monitor<wbr>Ignore<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#commanddefaults" class="tsd-kind-icon">command<wbr>Defaults</a>
