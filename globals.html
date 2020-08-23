@@ -74,6 +74,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum"><a href="enums/cooldownlevel.html" class="tsd-kind-icon">Cooldown<wbr>Level</a></li>
 								<li class="tsd-kind-enum"><a href="enums/events.html" class="tsd-kind-icon">Events</a></li>
+								<li class="tsd-kind-enum"><a href="enums/preconditionrunmode.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Mode</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -90,6 +91,9 @@
 								<li class="tsd-kind-class"><a href="classes/event.html" class="tsd-kind-icon">Event</a></li>
 								<li class="tsd-kind-class"><a href="classes/eventstore.html" class="tsd-kind-icon">Event<wbr>Store</a></li>
 								<li class="tsd-kind-class"><a href="classes/precondition.html" class="tsd-kind-icon">Precondition</a></li>
+								<li class="tsd-kind-class"><a href="classes/preconditioncontainerall.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>All</a></li>
+								<li class="tsd-kind-class"><a href="classes/preconditioncontainerany.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any</a></li>
+								<li class="tsd-kind-class"><a href="classes/preconditioncontainersingle.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single</a></li>
 								<li class="tsd-kind-class"><a href="classes/preconditionstore.html" class="tsd-kind-icon">Precondition<wbr>Store</a></li>
 								<li class="tsd-kind-class"><a href="classes/sapphireclient.html" class="tsd-kind-icon">Sapphire<wbr>Client</a></li>
 							</ul>
@@ -100,6 +104,8 @@
 								<li class="tsd-kind-interface"><a href="interfaces/commandoptions.html" class="tsd-kind-icon">Command<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/commandprecondition.html" class="tsd-kind-icon">Command<wbr>Precondition</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/eventoptions.html" class="tsd-kind-icon">Event<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ipreconditioncontainer.html" class="tsd-kind-icon">IPrecondition<wbr>Container</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/preconditioncontaineranydetaileddata.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any<wbr>Detailed<wbr>Data</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/preconditioncontext.html" class="tsd-kind-icon">Precondition<wbr>Context</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sapphireprefixhook.html" class="tsd-kind-icon">Sapphire<wbr>Prefix<wbr>Hook</a></li>
 							</ul>
@@ -109,7 +115,17 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-private"><a href="globals.html#awaited" class="tsd-kind-icon">Awaited</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#constructor" class="tsd-kind-icon">Constructor</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#entries" class="tsd-kind-icon">Entries</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#entry" class="tsd-kind-icon">Entry</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#preconditioncontainerresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Resolvable</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#preconditioncontainersingleresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Resolvable</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#preconditionresolvable" class="tsd-kind-icon">Precondition<wbr>Resolvable</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#issingle" class="tsd-kind-icon">is<wbr>Single</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">Awaited&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/utils/Types.ts#L2">src/lib/utils/Types.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/Types.ts#L2">src/lib/utils/Types.ts:2</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,8 +157,8 @@
 					<div class="tsd-signature tsd-kind-icon">Constructor&lt;T, T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/base/BaseAliasStore.ts#L6">src/lib/structures/base/BaseAliasStore.ts:6</a></li>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/base/BaseStore.ts#L6">src/lib/structures/base/BaseStore.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/base/BaseAliasStore.ts#L6">src/lib/structures/base/BaseAliasStore.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/base/BaseStore.ts#L6">src/lib/structures/base/BaseStore.ts:6</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -161,14 +177,80 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="entries" class="tsd-anchor"></a>
+					<h3>Entries</h3>
+					<div class="tsd-signature tsd-kind-icon">Entries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="globals.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/preconditions/PreconditionContainerAny.ts#L16">src/lib/utils/preconditions/PreconditionContainerAny.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="entry" class="tsd-anchor"></a>
+					<h3>Entry</h3>
+					<div class="tsd-signature tsd-kind-icon">Entry<span class="tsd-signature-symbol">:</span> <a href="globals.html#preconditioncontainersingleresolvable" class="tsd-signature-type">PreconditionContainerSingleResolvable</a><span class="tsd-signature-symbol"> | </span><a href="globals.html#preconditioncontainerresolvable" class="tsd-signature-type">PreconditionContainerResolvable</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/preconditions/PreconditionContainerAny.ts#L15">src/lib/utils/preconditions/PreconditionContainerAny.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="preconditioncontainerresolvable" class="tsd-anchor"></a>
+					<h3>Precondition<wbr>Container<wbr>Resolvable</h3>
+					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Container<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <a href="globals.html#entries" class="tsd-signature-type">Entries</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/preconditioncontaineranydetaileddata.html" class="tsd-signature-type">PreconditionContainerAnyDetailedData</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/preconditions/PreconditionContainerAny.ts#L17">src/lib/utils/preconditions/PreconditionContainerAny.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="preconditioncontainersingleresolvable" class="tsd-anchor"></a>
+					<h3>Precondition<wbr>Container<wbr>Single<wbr>Resolvable</h3>
+					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>context<span class="tsd-signature-symbol">: </span><a href="interfaces/preconditioncontext.html" class="tsd-signature-type">PreconditionContext</a><span class="tsd-signature-symbol">; </span>entry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/preconditions/PreconditionContainerSimple.ts#L6">src/lib/utils/preconditions/PreconditionContainerSimple.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="preconditionresolvable" class="tsd-anchor"></a>
 					<h3>Precondition<wbr>Resolvable</h3>
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>context<span class="tsd-signature-symbol">?: </span><a href="interfaces/preconditioncontext.html" class="tsd-signature-type">PreconditionContext</a><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/Command.ts#L105">src/lib/structures/Command.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/Command.ts#L102">src/lib/structures/Command.ts:102</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="issingle" class="tsd-anchor"></a>
+					<h3>is<wbr>Single</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Single<span class="tsd-signature-symbol">(</span>entry<span class="tsd-signature-symbol">: </span><a href="globals.html#entry" class="tsd-signature-type">Entry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">entry</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">PreconditionContainerSingleResolvable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/utils/preconditions/PreconditionContainerAny.ts#L19">src/lib/utils/preconditions/PreconditionContainerAny.ts:19</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entry: <a href="globals.html#entry" class="tsd-signature-type">Entry</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">entry</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">PreconditionContainerSingleResolvable</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -190,6 +272,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/events.html" class="tsd-kind-icon">Events</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/preconditionrunmode.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/basealiaspiece.html" class="tsd-kind-icon">Base<wbr>Alias<wbr>Piece</a>
@@ -225,6 +310,15 @@
 						<a href="classes/precondition.html" class="tsd-kind-icon">Precondition</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/preconditioncontainerall.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>All</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/preconditioncontainerany.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/preconditioncontainersingle.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/preconditionstore.html" class="tsd-kind-icon">Precondition<wbr>Store</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -240,6 +334,12 @@
 						<a href="interfaces/eventoptions.html" class="tsd-kind-icon">Event<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/ipreconditioncontainer.html" class="tsd-kind-icon">IPrecondition<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/preconditioncontaineranydetaileddata.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any<wbr>Detailed<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/preconditioncontext.html" class="tsd-kind-icon">Precondition<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -252,7 +352,22 @@
 						<a href="globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#entries" class="tsd-kind-icon">Entries</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#entry" class="tsd-kind-icon">Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#preconditioncontainerresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#preconditioncontainersingleresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#preconditionresolvable" class="tsd-kind-icon">Precondition<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#issingle" class="tsd-kind-icon">is<wbr>Single</a>
 					</li>
 				</ul>
 			</nav>
@@ -264,6 +379,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
@@ -274,12 +394,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 		</div>
 	</div>

@@ -182,7 +182,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/CommandStore.ts#L11">src/lib/structures/CommandStore.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/CommandStore.ts#L11">src/lib/structures/CommandStore.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#client">client</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/base/BaseAliasStore.ts#L9">src/lib/structures/base/BaseAliasStore.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/base/BaseAliasStore.ts#L9">src/lib/structures/base/BaseAliasStore.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -350,7 +350,7 @@
 								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#extras">extras</a></p>
 								<p>Overrides Store.extras</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/df95f00/src/lib/structures/base/BaseAliasStore.ts#L20">src/lib/structures/base/BaseAliasStore.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/bd2be01/src/lib/structures/base/BaseAliasStore.ts#L20">src/lib/structures/base/BaseAliasStore.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PieceContextExtras</span></h4>
@@ -2837,6 +2837,9 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/events.html" class="tsd-kind-icon">Events</a>
 					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/preconditionrunmode.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Mode</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="basealiaspiece.html" class="tsd-kind-icon">Base<wbr>Alias<wbr>Piece</a>
 					</li>
@@ -3042,6 +3045,15 @@
 						<a href="precondition.html" class="tsd-kind-icon">Precondition</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="preconditioncontainerall.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>All</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="preconditioncontainerany.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="preconditioncontainersingle.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="preconditionstore.html" class="tsd-kind-icon">Precondition<wbr>Store</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -3057,6 +3069,12 @@
 						<a href="../interfaces/eventoptions.html" class="tsd-kind-icon">Event<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ipreconditioncontainer.html" class="tsd-kind-icon">IPrecondition<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/preconditioncontaineranydetaileddata.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any<wbr>Detailed<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/preconditioncontext.html" class="tsd-kind-icon">Precondition<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -3069,7 +3087,22 @@
 						<a href="../globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#entries" class="tsd-kind-icon">Entries</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#entry" class="tsd-kind-icon">Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#preconditioncontainerresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#preconditioncontainersingleresolvable" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#preconditionresolvable" class="tsd-kind-icon">Precondition<wbr>Resolvable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#issingle" class="tsd-kind-icon">is<wbr>Single</a>
 					</li>
 				</ul>
 			</nav>
@@ -3081,6 +3114,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
@@ -3091,12 +3129,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 		</div>
 	</div>
