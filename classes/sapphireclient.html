@@ -88,13 +88,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#arguments" class="tsd-kind-icon">arguments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#channels" class="tsd-kind-icon">channels</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#clientid" class="tsd-kind-icon">clientID</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#commands" class="tsd-kind-icon">commands</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#emojis" class="tsd-kind-icon">emojis</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#events" class="tsd-kind-icon">events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#guilds" class="tsd-kind-icon">guilds</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#preconditions" class="tsd-kind-icon">preconditions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#readyat" class="tsd-kind-icon">ready<wbr>At</a></li>
@@ -161,7 +161,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Client.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L31">src/lib/SapphireClient.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L37">src/lib/SapphireClient.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,6 +177,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="arguments" class="tsd-anchor"></a>
+					<h3>arguments</h3>
+					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <a href="argumentstore.html" class="tsd-signature-type">ArgumentStore</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#arguments">arguments</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L22">src/lib/SapphireClient.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The commands the framework has registered.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="channels" class="tsd-anchor"></a>
 					<h3>channels</h3>
@@ -188,21 +204,6 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="clientid" class="tsd-anchor"></a>
-					<h3>clientID</h3>
-					<div class="tsd-signature tsd-kind-icon">clientID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L16">src/lib/SapphireClient.ts:16</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The client&#39;s ID, used for the user prefix.</p>
-						</div>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="commands" class="tsd-anchor"></a>
 					<h3>commands</h3>
@@ -210,7 +211,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#commands">commands</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L21">src/lib/SapphireClient.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L27">src/lib/SapphireClient.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,7 +238,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#events">events</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L26">src/lib/SapphireClient.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L32">src/lib/SapphireClient.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -257,16 +258,21 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="sapphireclient.html">SapphireClient</a>.<a href="sapphireclient.html#id">id</a></p>
+						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L71">src/lib/SapphireClient.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L17">src/lib/SapphireClient.ts:17</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The client&#39;s ID, used for the user prefix.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="options" class="tsd-anchor"></a>
@@ -286,7 +292,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#preconditions">preconditions</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L31">src/lib/SapphireClient.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L37">src/lib/SapphireClient.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -688,7 +694,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#fetchprefix">fetchPrefix</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/SapphireClient.ts#L66">src/lib/SapphireClient.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L73">src/lib/SapphireClient.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1609,11 +1615,11 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="sapphireclient.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="sapphireclient.html#arguments" class="tsd-kind-icon">arguments</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="sapphireclient.html#channels" class="tsd-kind-icon">channels</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="sapphireclient.html#clientid" class="tsd-kind-icon">clientID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="sapphireclient.html#commands" class="tsd-kind-icon">commands</a>
@@ -1627,7 +1633,7 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="sapphireclient.html#guilds" class="tsd-kind-icon">guilds</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="sapphireclient.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">

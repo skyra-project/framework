@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ClientOptions | @sapphire/framework</title>
+	<title>EventErrorPayload | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_discord_js_.html">&quot;discord.js&quot;</a>
-				</li>
-				<li>
-					<a href="_discord_js_.clientoptions.html">ClientOptions</a>
+					<a href="eventerrorpayload.html">EventErrorPayload</a>
 				</li>
 			</ul>
-			<h1>Interface ClientOptions</h1>
+			<h1>Interface EventErrorPayload</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +66,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ClientOptions</span>
+						<a href="ipieceerror.html" class="tsd-signature-type">IPieceError</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">EventErrorPayload</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -80,7 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_discord_js_.clientoptions.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="eventerrorpayload.html#piece" class="tsd-kind-icon">piece</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,13 +90,14 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+					<a name="piece" class="tsd-anchor"></a>
+					<h3>piece</h3>
+					<div class="tsd-signature tsd-kind-icon">piece<span class="tsd-signature-symbol">:</span> <a href="../classes/event.html" class="tsd-signature-type">Event</a></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="ipieceerror.html">IPieceError</a>.<a href="ipieceerror.html#piece">piece</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/SapphireClient.ts#L87">src/lib/SapphireClient.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a890d74/src/lib/types/Events.ts#L82">src/lib/types/Events.ts:82</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -106,26 +109,17 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/_discord_js_.html">&quot;discord.js&quot;</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_discord_js_.client.html" class="tsd-kind-icon">Client</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_discord_js_.clientevents.html" class="tsd-kind-icon">Client<wbr>Events</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_discord_js_.clientoptions.html" class="tsd-kind-icon">Client<wbr>Options</a>
+					<li class="current tsd-kind-interface">
+						<a href="eventerrorpayload.html" class="tsd-kind-icon">Event<wbr>Error<wbr>Payload</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_discord_js_.clientoptions.html#id" class="tsd-kind-icon">id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+								<a href="eventerrorpayload.html#piece" class="tsd-kind-icon">piece</a>
 							</li>
 						</ul>
 					</li>
