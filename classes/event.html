@@ -55,13 +55,21 @@
 					<a href="event.html">Event</a>
 				</li>
 			</ul>
-			<h1>Class Event</h1>
+			<h1>Class Event&lt;E&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>E<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/_discord_js_.clientevents.html" class="tsd-signature-type">ClientEvents</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -140,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -165,7 +173,7 @@
 					<div class="tsd-signature tsd-kind-icon">#listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L8">src/lib/structures/Event.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L8">src/lib/structures/Event.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -201,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L9">src/lib/structures/Event.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L9">src/lib/structures/Event.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L10">src/lib/structures/Event.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L10">src/lib/structures/Event.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -293,7 +301,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -307,19 +315,19 @@
 					<a name="_run" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">_run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L42">src/lib/structures/Event.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L42">src/lib/structures/Event.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -330,19 +338,19 @@
 					<a name="_runonce" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _run<wbr>Once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_run<wbr>Once<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">_run<wbr>Once<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L50">src/lib/structures/Event.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L51">src/lib/structures/Event.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -360,7 +368,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#onload">onLoad</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L27">src/lib/structures/Event.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L27">src/lib/structures/Event.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -378,7 +386,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#onunload">onUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L31">src/lib/structures/Event.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L31">src/lib/structures/Event.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -389,19 +397,19 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">ClientEvents</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">ClientEvents</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L25">src/lib/structures/Event.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L25">src/lib/structures/Event.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">E</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">ClientEvents</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">ClientEvents</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
@@ -419,7 +427,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7688a0a/src/lib/structures/Event.ts#L35">src/lib/structures/Event.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/770101f/src/lib/structures/Event.ts#L35">src/lib/structures/Event.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -440,7 +448,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="event.html" class="tsd-kind-icon">Event</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
