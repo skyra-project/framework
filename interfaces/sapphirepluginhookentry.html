@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Err | @sapphire/framework</title>
+	<title>SapphirePluginHookEntry | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,41 +52,21 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="err.html">Err</a>
+					<a href="sapphirepluginhookentry.html">SapphirePluginHookEntry</a>
 				</li>
 			</ul>
-			<h1>Interface Err&lt;E&gt;</h1>
+			<h1>Interface SapphirePluginHookEntry</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The computation failed.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>E</h4>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Type of errors.</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Err</span>
+						<span class="target">SapphirePluginHookEntry</span>
 					</li>
 				</ul>
 			</section>
@@ -97,8 +77,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="err.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="err.html#success" class="tsd-kind-icon">success</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sapphirepluginhookentry.html#hook" class="tsd-kind-icon">hook</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sapphirepluginhookentry.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sapphirepluginhookentry.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,34 +88,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">E</span></div>
+					<a name="hook" class="tsd-anchor"></a>
+					<h3>hook</h3>
+					<div class="tsd-signature tsd-kind-icon">hook<span class="tsd-signature-symbol">:</span> <a href="sapphirepluginhook.html" class="tsd-signature-type">SapphirePluginHook</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/utils/Result.ts#L37">src/lib/utils/Result.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/plugins/PluginManager.ts#L12">src/lib/plugins/PluginManager.ts:12</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The resulting error, defined only in Err<E>.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="success" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> success</h3>
-					<div class="tsd-signature tsd-kind-icon">success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/utils/Result.ts#L32">src/lib/utils/Result.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/plugins/PluginManager.ts#L14">src/lib/plugins/PluginManager.ts:14</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether or not the result was successful, always false in Err<E>.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/pluginhook.html" class="tsd-signature-type">PluginHook</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/plugins/PluginManager.ts#L13">src/lib/plugins/PluginManager.ts:13</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -150,14 +131,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
-						<a href="err.html" class="tsd-kind-icon">Err</a>
+					<li class="current tsd-kind-interface">
+						<a href="sapphirepluginhookentry.html" class="tsd-kind-icon">Sapphire<wbr>Plugin<wbr>Hook<wbr>Entry</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="err.html#error" class="tsd-kind-icon">error</a>
+								<a href="sapphirepluginhookentry.html#hook" class="tsd-kind-icon">hook</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="err.html#success" class="tsd-kind-icon">success</a>
+								<a href="sapphirepluginhookentry.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sapphirepluginhookentry.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

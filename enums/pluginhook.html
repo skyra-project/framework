@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Err | @sapphire/framework</title>
+	<title>PluginHook | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,89 +52,73 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="err.html">Err</a>
+					<a href="pluginhook.html">PluginHook</a>
 				</li>
 			</ul>
-			<h1>Interface Err&lt;E&gt;</h1>
+			<h1>Enumeration PluginHook</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The computation failed.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>E</h4>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Type of errors.</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Err</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="err.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="err.html#success" class="tsd-kind-icon">success</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="pluginhook.html#postinitialization" class="tsd-kind-icon">Post<wbr>Initialization</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="pluginhook.html#postlogin" class="tsd-kind-icon">Post<wbr>Login</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="pluginhook.html#preinitialization" class="tsd-kind-icon">Pre<wbr>Initialization</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="pluginhook.html#prelogin" class="tsd-kind-icon">Pre<wbr>Login</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">E</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="postinitialization" class="tsd-anchor"></a>
+					<h3>Post<wbr>Initialization</h3>
+					<div class="tsd-signature tsd-kind-icon">Post<wbr>Initialization<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/utils/Result.ts#L37">src/lib/utils/Result.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/types/Enums.ts#L9">src/lib/types/Enums.ts:9</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The resulting error, defined only in Err<E>.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="success" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> success</h3>
-					<div class="tsd-signature tsd-kind-icon">success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="postlogin" class="tsd-anchor"></a>
+					<h3>Post<wbr>Login</h3>
+					<div class="tsd-signature tsd-kind-icon">Post<wbr>Login<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/utils/Result.ts#L32">src/lib/utils/Result.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/types/Enums.ts#L11">src/lib/types/Enums.ts:11</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether or not the result was successful, always false in Err<E>.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="preinitialization" class="tsd-anchor"></a>
+					<h3>Pre<wbr>Initialization</h3>
+					<div class="tsd-signature tsd-kind-icon">Pre<wbr>Initialization<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/types/Enums.ts#L8">src/lib/types/Enums.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="prelogin" class="tsd-anchor"></a>
+					<h3>Pre<wbr>Login</h3>
+					<div class="tsd-signature tsd-kind-icon">Pre<wbr>Login<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a992b7e/src/lib/types/Enums.ts#L10">src/lib/types/Enums.ts:10</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -150,14 +134,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
-						<a href="err.html" class="tsd-kind-icon">Err</a>
+					<li class="current tsd-kind-enum">
+						<a href="pluginhook.html" class="tsd-kind-icon">Plugin<wbr>Hook</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="err.html#error" class="tsd-kind-icon">error</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="pluginhook.html#postinitialization" class="tsd-kind-icon">Post<wbr>Initialization</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="err.html#success" class="tsd-kind-icon">success</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="pluginhook.html#postlogin" class="tsd-kind-icon">Post<wbr>Login</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="pluginhook.html#preinitialization" class="tsd-kind-icon">Pre<wbr>Initialization</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="pluginhook.html#prelogin" class="tsd-kind-icon">Pre<wbr>Login</a>
 							</li>
 						</ul>
 					</li>
