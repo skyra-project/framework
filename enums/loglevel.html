@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CooldownLevel | @sapphire/framework</title>
+	<title>LogLevel | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="cooldownlevel.html">CooldownLevel</a>
+					<a href="loglevel.html">LogLevel</a>
 				</li>
 			</ul>
-			<h1>Enumeration CooldownLevel</h1>
+			<h1>Enumeration LogLevel</h1>
 		</div>
 	</div>
 </header>
@@ -69,9 +69,13 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="cooldownlevel.html#author" class="tsd-kind-icon">Author</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="cooldownlevel.html#channel" class="tsd-kind-icon">Channel</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="cooldownlevel.html#guild" class="tsd-kind-icon">Guild</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#debug" class="tsd-kind-icon">Debug</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#fatal" class="tsd-kind-icon">Fatal</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#info" class="tsd-kind-icon">Info</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#none" class="tsd-kind-icon">None</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#trace" class="tsd-kind-icon">Trace</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#warn" class="tsd-kind-icon">Warn</a></li>
 							</ul>
 						</section>
 					</div>
@@ -80,32 +84,72 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="author" class="tsd-anchor"></a>
-					<h3>Author</h3>
-					<div class="tsd-signature tsd-kind-icon">Author<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;author&quot;</span></div>
+					<a name="debug" class="tsd-anchor"></a>
+					<h3>Debug</h3>
+					<div class="tsd-signature tsd-kind-icon">Debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 20</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/types/Enums.ts#L2">src/lib/types/Enums.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L3">src/lib/utils/logger/ILogger.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="channel" class="tsd-anchor"></a>
-					<h3>Channel</h3>
-					<div class="tsd-signature tsd-kind-icon">Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;channel&quot;</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 50</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/types/Enums.ts#L3">src/lib/types/Enums.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L6">src/lib/utils/logger/ILogger.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="guild" class="tsd-anchor"></a>
-					<h3>Guild</h3>
-					<div class="tsd-signature tsd-kind-icon">Guild<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;guild&quot;</span></div>
+					<a name="fatal" class="tsd-anchor"></a>
+					<h3>Fatal</h3>
+					<div class="tsd-signature tsd-kind-icon">Fatal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 60</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/types/Enums.ts#L4">src/lib/types/Enums.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L7">src/lib/utils/logger/ILogger.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="info" class="tsd-anchor"></a>
+					<h3>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 30</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L4">src/lib/utils/logger/ILogger.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="none" class="tsd-anchor"></a>
+					<h3>None</h3>
+					<div class="tsd-signature tsd-kind-icon">None<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 100</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L8">src/lib/utils/logger/ILogger.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="trace" class="tsd-anchor"></a>
+					<h3>Trace</h3>
+					<div class="tsd-signature tsd-kind-icon">Trace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 10</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L2">src/lib/utils/logger/ILogger.ts:2</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="warn" class="tsd-anchor"></a>
+					<h3>Warn</h3>
+					<div class="tsd-signature tsd-kind-icon">Warn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 40</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/021085c/src/lib/utils/logger/ILogger.ts#L5">src/lib/utils/logger/ILogger.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,16 +168,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="cooldownlevel.html" class="tsd-kind-icon">Cooldown<wbr>Level</a>
+						<a href="loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="cooldownlevel.html#author" class="tsd-kind-icon">Author</a>
+								<a href="loglevel.html#debug" class="tsd-kind-icon">Debug</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="cooldownlevel.html#channel" class="tsd-kind-icon">Channel</a>
+								<a href="loglevel.html#error" class="tsd-kind-icon">Error</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="cooldownlevel.html#guild" class="tsd-kind-icon">Guild</a>
+								<a href="loglevel.html#fatal" class="tsd-kind-icon">Fatal</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loglevel.html#info" class="tsd-kind-icon">Info</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loglevel.html#none" class="tsd-kind-icon">None</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loglevel.html#trace" class="tsd-kind-icon">Trace</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loglevel.html#warn" class="tsd-kind-icon">Warn</a>
 							</li>
 						</ul>
 					</li>
