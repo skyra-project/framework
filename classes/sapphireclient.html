@@ -94,6 +94,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#emojis" class="tsd-kind-icon">emojis</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#events" class="tsd-kind-icon">events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#guilds" class="tsd-kind-icon">guilds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#i18n" class="tsd-kind-icon">i18n</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="sapphireclient.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="sapphireclient.html#options" class="tsd-kind-icon">options</a></li>
@@ -167,7 +168,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Client.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L62">src/lib/SapphireClient.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L73">src/lib/SapphireClient.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -190,7 +191,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#arguments">arguments</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L38">src/lib/SapphireClient.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L49">src/lib/SapphireClient.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,7 +223,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#commands">commands</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L44">src/lib/SapphireClient.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L55">src/lib/SapphireClient.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +255,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#events">events</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L50">src/lib/SapphireClient.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L61">src/lib/SapphireClient.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,13 +281,34 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="i18n" class="tsd-anchor"></a>
+					<h3>i18n</h3>
+					<div class="tsd-signature tsd-kind-icon">i18n<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iinternationalization.html" class="tsd-signature-type">IInternationalization</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#i18n">i18n</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L43">src/lib/SapphireClient.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The internationalization handler to be used by the framework and plugins.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L26">src/lib/SapphireClient.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L31">src/lib/SapphireClient.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -307,7 +329,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L32">src/lib/SapphireClient.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L37">src/lib/SapphireClient.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,7 +361,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#preconditions">preconditions</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L56">src/lib/SapphireClient.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L67">src/lib/SapphireClient.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +414,7 @@
 					<div class="tsd-signature tsd-kind-icon">stores<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L62">src/lib/SapphireClient.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L73">src/lib/SapphireClient.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -478,7 +500,7 @@
 					<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <a href="pluginmanager.html" class="tsd-signature-type">PluginManager</a><span class="tsd-signature-symbol"> = new PluginManager()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L182">src/lib/SapphireClient.ts:182</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L194">src/lib/SapphireClient.ts:194</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -776,7 +798,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="../interfaces/_discord_js_.client.html">Client</a>.<a href="../interfaces/_discord_js_.client.html#fetchprefix">fetchPrefix</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L157">src/lib/SapphireClient.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L169">src/lib/SapphireClient.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -958,7 +980,7 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 							<aside class="tsd-sources">
 								<p>Overrides Client.login</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L165">src/lib/SapphireClient.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L177">src/lib/SapphireClient.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1399,7 +1421,7 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L126">src/lib/SapphireClient.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L138">src/lib/SapphireClient.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1436,7 +1458,7 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L116">src/lib/SapphireClient.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L128">src/lib/SapphireClient.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1788,7 +1810,7 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/1421c05/src/lib/SapphireClient.ts#L184">src/lib/SapphireClient.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/a83b77a/src/lib/SapphireClient.ts#L196">src/lib/SapphireClient.ts:196</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1838,6 +1860,9 @@ client.fetchPrefix = <span class="hljs-keyword">async</span> (message) =&gt; {
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="sapphireclient.html#guilds" class="tsd-kind-icon">guilds</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="sapphireclient.html#i18n" class="tsd-kind-icon">i18n</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="sapphireclient.html#id" class="tsd-kind-icon">id</a>
