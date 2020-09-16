@@ -102,11 +102,11 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="command.html#detaileddescription" class="tsd-kind-icon">detailed<wbr>Description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="command.html#enabled" class="tsd-kind-icon">enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="command.html#extras" class="tsd-kind-icon">extras</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="command.html#flags" class="tsd-kind-icon">flags</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="command.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="command.html#path" class="tsd-kind-icon">path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="command.html#preconditions" class="tsd-kind-icon">preconditions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="command.html#store" class="tsd-kind-icon">store</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="command.html#strategy" class="tsd-kind-icon">strategy</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -141,7 +141,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L42">src/lib/structures/Command.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L43">src/lib/structures/Command.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -189,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">#lexer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Lexer</span><span class="tsd-signature-symbol"> = new Lexure.Lexer()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L42">src/lib/structures/Command.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L43">src/lib/structures/Command.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L16">src/lib/structures/Command.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L17">src/lib/structures/Command.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -245,7 +245,7 @@
 					<div class="tsd-signature tsd-kind-icon">detailed<wbr>Description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L28">src/lib/structures/Command.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L29">src/lib/structures/Command.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -291,26 +291,6 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="flags" class="tsd-anchor"></a>
-					<h3>flags</h3>
-					<div class="tsd-signature tsd-kind-icon">flags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L34">src/lib/structures/Command.ts:34</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Accepted flags for the command</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
@@ -349,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">preconditions<span class="tsd-signature-symbol">:</span> <a href="preconditioncontainerall.html" class="tsd-signature-type">PreconditionContainerAll</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L22">src/lib/structures/Command.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L23">src/lib/structures/Command.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -379,6 +359,26 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="strategy" class="tsd-anchor"></a>
+					<h3>strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">UnorderedStrategy</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L35">src/lib/structures/Command.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The strategy to use for the lexer.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
@@ -393,7 +393,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -461,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L69">src/lib/structures/Command.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L70">src/lib/structures/Command.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L80">src/lib/structures/Command.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L81">src/lib/structures/Command.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -536,7 +536,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/cafa1a9/src/lib/structures/Command.ts#L85">src/lib/structures/Command.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/905d1fc/src/lib/structures/Command.ts#L86">src/lib/structures/Command.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -586,9 +586,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="command.html#extras" class="tsd-kind-icon">extras</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="command.html#flags" class="tsd-kind-icon">flags</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="command.html#name" class="tsd-kind-icon">name</a>
 							</li>
@@ -600,6 +597,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="command.html#store" class="tsd-kind-icon">store</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="command.html#strategy" class="tsd-kind-icon">strategy</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="command.html#client" class="tsd-kind-icon">client</a>
