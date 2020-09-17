@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreconditionRunMode | @sapphire/framework</title>
+	<title>PreconditionContainerSingleEntry | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,49 +52,63 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="preconditionrunmode.html">PreconditionRunMode</a>
+					<a href="preconditioncontainersingleentry.html">PreconditionContainerSingleEntry</a>
 				</li>
 			</ul>
-			<h1>Enumeration PreconditionRunMode</h1>
+			<h1>Interface PreconditionContainerSingleEntry</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">PreconditionContainerSingleEntry</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/permissionsprecondition.html" class="tsd-signature-type">PermissionsPrecondition</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionrunmode.html#parallel" class="tsd-kind-icon">Parallel</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionrunmode.html#sequential" class="tsd-kind-icon">Sequential</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontainersingleentry.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontainersingleentry.html#entry" class="tsd-kind-icon">entry</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="parallel" class="tsd-anchor"></a>
-					<h3>Parallel</h3>
-					<div class="tsd-signature tsd-kind-icon">Parallel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;parallel&quot;</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="preconditioncontext.html" class="tsd-signature-type">PreconditionContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/utils/preconditions/PreconditionContainerAny.ts#L11">src/lib/utils/preconditions/PreconditionContainerAny.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/utils/preconditions/PreconditionContainerSimple.ts#L8">src/lib/utils/preconditions/PreconditionContainerSimple.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="sequential" class="tsd-anchor"></a>
-					<h3>Sequential</h3>
-					<div class="tsd-signature tsd-kind-icon">Sequential<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sequential&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="entry" class="tsd-anchor"></a>
+					<h3>entry</h3>
+					<div class="tsd-signature tsd-kind-icon">entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/utils/preconditions/PreconditionContainerAny.ts#L10">src/lib/utils/preconditions/PreconditionContainerAny.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/utils/preconditions/PreconditionContainerSimple.ts#L7">src/lib/utils/preconditions/PreconditionContainerSimple.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,14 +126,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum">
-						<a href="preconditionrunmode.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Mode</a>
+					<li class="current tsd-kind-interface">
+						<a href="preconditioncontainersingleentry.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Entry</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="preconditionrunmode.html#parallel" class="tsd-kind-icon">Parallel</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="preconditioncontainersingleentry.html#context" class="tsd-kind-icon">context</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="preconditionrunmode.html#sequential" class="tsd-kind-icon">Sequential</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="preconditioncontainersingleentry.html#entry" class="tsd-kind-icon">entry</a>
 							</li>
 						</ul>
 					</li>

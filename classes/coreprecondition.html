@@ -73,6 +73,9 @@
 					</li>
 					<li>
 						<a href="precondition.html" class="tsd-signature-type">Precondition</a>
+					</li>
+					<li>
+						<a href="precondition.html" class="tsd-signature-type">Precondition</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">CorePrecondition</span>
@@ -91,9 +94,10 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="coreprecondition.html#dmchannelpermissions" class="tsd-kind-icon">dm<wbr>Channel<wbr>Permissions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#enabled" class="tsd-kind-icon">enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#extras" class="tsd-kind-icon">extras</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#name" class="tsd-kind-icon">name</a></li>
@@ -110,6 +114,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#ok" class="tsd-kind-icon">ok</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreprecondition.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="coreprecondition.html#run" class="tsd-kind-icon">run</a></li>
@@ -150,8 +156,18 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="dmchannelpermissions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> dm<wbr>Channel<wbr>Permissions</h3>
+					<div class="tsd-signature tsd-kind-icon">dm<wbr>Channel<wbr>Permissions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BitField</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PermissionString</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Permissions([Permissions.FLAGS.VIEW_CHANNEL,Permissions.FLAGS.SEND_MESSAGES,Permissions.FLAGS.SEND_TTS_MESSAGES,Permissions.FLAGS.EMBED_LINKS,Permissions.FLAGS.ATTACH_FILES,Permissions.FLAGS.READ_MESSAGE_HISTORY,Permissions.FLAGS.MENTION_EVERYONE,Permissions.FLAGS.USE_EXTERNAL_EMOJIS,Permissions.FLAGS.ADD_REACTIONS]).freeze()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/preconditions/Permissions.ts#L6">src/preconditions/Permissions.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="enabled" class="tsd-anchor"></a>
 					<h3>enabled</h3>
@@ -252,7 +268,7 @@
 								<p>Inherited from <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#client">client</a></p>
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/4eb1016/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -262,6 +278,95 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extras<span class="tsd-signature-symbol">?: </span><a href="../globals.html#preconditionerrorextras" class="tsd-signature-type">PreconditionErrorExtras</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extras<span class="tsd-signature-symbol">?: </span><a href="../globals.html#preconditionerrorextras" class="tsd-signature-type">PreconditionErrorExtras</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#error">error</a></p>
+								<p>Overrides <a href="precondition.html">Precondition</a>.<a href="precondition.html#error">error</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/structures/Precondition.ts#L23">src/lib/structures/Precondition.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs an <a href="argumenterror.html">ArgumentError</a> with [[ArgumentError#type]] set to the [[IArgument<T>#name]].</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The description message for the rejection.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extras: <a href="../globals.html#preconditionerrorextras" class="tsd-signature-type">PreconditionErrorExtras</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#error">error</a></p>
+								<p>Overrides <a href="precondition.html">Precondition</a>.<a href="precondition.html#error">error</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/structures/Precondition.ts#L30">src/lib/structures/Precondition.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs an <a href="argumenterror.html">ArgumentError</a> with a custom type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The identifier for the error.</p>
+									</div>
+								</li>
+								<li>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The description message for the rejection.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extras: <a href="../globals.html#preconditionerrorextras" class="tsd-signature-type">PreconditionErrorExtras</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="ok" class="tsd-anchor"></a>
+					<h3>ok</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">ok<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#ok">ok</a></p>
+								<p>Overrides <a href="precondition.html">Precondition</a>.<a href="precondition.html#ok">ok</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/lib/structures/Precondition.ts#L15">src/lib/structures/Precondition.ts:15</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="onload" class="tsd-anchor"></a>
 					<h3>on<wbr>Load</h3>
@@ -316,14 +421,14 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../interfaces/_discord_js_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../interfaces/_discord_js_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="precondition.html">Precondition</a>.<a href="precondition.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/4eb1016/src/preconditions/DMOnly.ts#L8">src/preconditions/DMOnly.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/123a975/src/preconditions/DMOnly.ts#L5">src/preconditions/DMOnly.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -332,7 +437,7 @@
 									<h5>message: <a href="../interfaces/_discord_js_.message.html" class="tsd-signature-type">Message</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#preconditionresult" class="tsd-signature-type">PreconditionResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -375,6 +480,9 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreprecondition.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="coreprecondition.html#dmchannelpermissions" class="tsd-kind-icon">dm<wbr>Channel<wbr>Permissions</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreprecondition.html#enabled" class="tsd-kind-icon">enabled</a>
 							</li>
@@ -392,6 +500,12 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreprecondition.html#client" class="tsd-kind-icon">client</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="coreprecondition.html#error" class="tsd-kind-icon">error</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="coreprecondition.html#ok" class="tsd-kind-icon">ok</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreprecondition.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
