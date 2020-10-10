@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IArgument | @sapphire/framework</title>
+	<title>ICommandPayload | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,50 +52,33 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="iargument.html">IArgument</a>
+					<a href="icommandpayload.html">ICommandPayload</a>
 				</li>
 			</ul>
-			<h1>Interface IArgument&lt;T&gt;</h1>
+			<h1>Interface ICommandPayload</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T</h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IArgument</span>
+						<span class="target">ICommandPayload</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="commanddeniedpayload.html" class="tsd-signature-type">CommandDeniedPayload</a>
+							</li>
+							<li>
+								<a href="commandacceptedpayload.html" class="tsd-signature-type">CommandAcceptedPayload</a>
+							</li>
+							<li>
+								<a href="commandsuccesspayload.html" class="tsd-signature-type">CommandSuccessPayload</a>
+							</li>
+						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/argument.html" class="tsd-signature-type">Argument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
-					<li><a href="../classes/coreargument.html" class="tsd-signature-type">CoreArgument</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -105,13 +88,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iargument.html#name" class="tsd-kind-icon">name</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iargument.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icommandpayload.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icommandpayload.html#message" class="tsd-kind-icon">message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -120,43 +98,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type">Command</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d329b0f/src/lib/structures/Argument.ts#L13">src/lib/structures/Argument.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d329b0f/src/lib/types/Events.ts#L96">src/lib/types/Events.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="run" class="tsd-anchor"></a>
-					<h3>run</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, context<span class="tsd-signature-symbol">: </span><a href="argumentcontext.html" class="tsd-signature-type">ArgumentContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d329b0f/src/lib/structures/Argument.ts#L14">src/lib/structures/Argument.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>argument: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>context: <a href="argumentcontext.html" class="tsd-signature-type">ArgumentContext</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <a href="_discord_js_.message.html" class="tsd-signature-type">Message</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d329b0f/src/lib/types/Events.ts#L95">src/lib/types/Events.ts:95</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -172,14 +131,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
-						<a href="iargument.html" class="tsd-kind-icon">IArgument</a>
+					<li class="current tsd-kind-interface">
+						<a href="icommandpayload.html" class="tsd-kind-icon">ICommand<wbr>Payload</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iargument.html#name" class="tsd-kind-icon">name</a>
+								<a href="icommandpayload.html#command" class="tsd-kind-icon">command</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="iargument.html#run" class="tsd-kind-icon">run</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icommandpayload.html#message" class="tsd-kind-icon">message</a>
 							</li>
 						</ul>
 					</li>
