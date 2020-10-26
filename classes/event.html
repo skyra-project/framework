@@ -62,6 +62,47 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The base event class. This class is abstract and is to be extended by subclasses, which should implement the methods. In
+						Sapphire&#39;s workflow, events are called when the emitter they listen on emits a new message with the same event name.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code class="language-typescript"><span class="hljs-comment">// TypeScript:</span>
+<span class="hljs-keyword">import</span> { Event, Events, PieceContext } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sapphire/framework&#x27;</span>;
+
+<span class="hljs-comment">// Define a class extending `CoreEvent`, then export it.</span>
+<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> You can use `export default` or `export =` too.</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CoreEvent <span class="hljs-keyword">extends</span> Event&lt;Events.Ready&gt; {
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">constructor</span>(<span class="hljs-params">context: PieceContext</span>) {
+    <span class="hljs-built_in">super</span>(context, { event: Events.Ready, once: <span class="hljs-literal">true</span> });
+  }
+
+  <span class="hljs-keyword">public</span> run() {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">this</span>.client.id) <span class="hljs-built_in">this</span>.client.id = <span class="hljs-built_in">this</span>.client.user?.id ?? <span class="hljs-literal">null</span>;
+  }
+}</code></pre>
+						</dd>
+						<dt>example</dt>
+						<dd><pre><code class="language-javascript"><span class="hljs-comment">// JavaScript:</span>
+<span class="hljs-keyword">const</span> { Event, Events } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;sapphire/framework&#x27;</span>);
+
+<span class="hljs-comment">// Define a class extending `CoreEvent`, then export it.</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoreEvent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Event</span> </span>{
+  <span class="hljs-keyword">constructor</span>(context) {
+    <span class="hljs-built_in">super</span>(context, { <span class="hljs-attr">event</span>: Events.Ready, <span class="hljs-attr">once</span>: <span class="hljs-literal">true</span> });
+  }
+
+  run() {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">this</span>.client.id) <span class="hljs-built_in">this</span>.client.id = <span class="hljs-built_in">this</span>.client.user?.id ?? <span class="hljs-literal">null</span>;
+  }
+}</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -157,7 +198,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L52">src/lib/structures/Event.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">#listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L13">src/lib/structures/Event.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L52">src/lib/structures/Event.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L8">src/lib/structures/Event.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L47">src/lib/structures/Event.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L9">src/lib/structures/Event.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L48">src/lib/structures/Event.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L10">src/lib/structures/Event.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L49">src/lib/structures/Event.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +351,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/base/BasePiece.ts#L5">src/lib/structures/base/BasePiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -330,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L45">src/lib/structures/Event.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L84">src/lib/structures/Event.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -353,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L54">src/lib/structures/Event.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L93">src/lib/structures/Event.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,7 +418,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#onload">onLoad</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L30">src/lib/structures/Event.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L69">src/lib/structures/Event.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -395,7 +436,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#onunload">onUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L34">src/lib/structures/Event.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L73">src/lib/structures/Event.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -412,7 +453,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L28">src/lib/structures/Event.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L67">src/lib/structures/Event.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -436,7 +477,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Event.ts#L38">src/lib/structures/Event.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Event.ts#L77">src/lib/structures/Event.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>

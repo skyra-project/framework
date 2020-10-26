@@ -62,6 +62,64 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The base argument class. This class is abstract and is to be extended by subclasses implementing the methods. In
+						Sapphire&#39;s workflow, arguments are called when using <a href="args.html">Args</a>&#39;s methods (usually used inside <a href="command.html">Command</a>s by default).</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code class="language-typescript"><span class="hljs-comment">// TypeScript:</span>
+<span class="hljs-keyword">import</span> { Argument, ArgumentResult, PieceContext } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sapphire/framework&#x27;</span>;
+<span class="hljs-keyword">import</span> { URL } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;url&#x27;</span>;
+
+<span class="hljs-comment">// Define a class extending `Argument`, then export it.</span>
+<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> You can use `export default` or `export =` too.</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CoreArgument <span class="hljs-keyword">extends</span> Argument&lt;URL&gt; {
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">constructor</span>(<span class="hljs-params">context: PieceContext</span>) {
+    <span class="hljs-built_in">super</span>(context, { name: <span class="hljs-string">&#x27;hyperlink&#x27;</span>, aliases: [<span class="hljs-string">&#x27;url&#x27;</span>] });
+  }
+
+  <span class="hljs-keyword">public</span> run(argument: <span class="hljs-built_in">string</span>): ArgumentResult&lt;URL&gt; {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.ok(<span class="hljs-keyword">new</span> URL(argument));
+    } <span class="hljs-keyword">catch</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentHyperlinkInvalidURL&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a valid URL.&#x27;</span>);
+    }
+  }
+}
+
+<span class="hljs-comment">// Augment the ArgType structure so `args.pick(&#x27;url&#x27;)`, `args.repeat(&#x27;url&#x27;)`</span>
+<span class="hljs-comment">// and others have a return type of `URL`.</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">module</span> &#x27;sapphire/framework/dist/lib/utils/Args&#x27; {
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> ArgType {
+    url: URL;
+  }
+}</code></pre>
+						</dd>
+						<dt>example</dt>
+						<dd><pre><code class="language-javascript"><span class="hljs-comment">// JavaScript:</span>
+<span class="hljs-keyword">const</span> { Argument } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;sapphire/framework&#x27;</span>);
+
+<span class="hljs-comment">// Define a class extending `Argument`, then export it.</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoreArgument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Argument</span> </span>{
+  <span class="hljs-keyword">constructor</span>(context) {
+    <span class="hljs-built_in">super</span>(context, { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;hyperlink&#x27;</span>, <span class="hljs-attr">aliases</span>: [<span class="hljs-string">&#x27;url&#x27;</span>] });
+  }
+
+  run(argument) {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.ok(<span class="hljs-keyword">new</span> URL(argument));
+    } <span class="hljs-keyword">catch</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentHyperlinkInvalidURL&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a valid URL.&#x27;</span>);
+    }
+  }
+}</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -318,7 +376,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -339,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Argument.ts#L29">src/lib/structures/Argument.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Argument.ts#L105">src/lib/structures/Argument.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +425,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Argument.ts#L37">src/lib/structures/Argument.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Argument.ts#L113">src/lib/structures/Argument.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,13 +468,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Argument.ts#L20">src/lib/structures/Argument.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Argument.ts#L96">src/lib/structures/Argument.ts:96</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Wraps a value into a successful value.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to wrap.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -482,7 +548,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iargument.html">IArgument</a>.<a href="../interfaces/iargument.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/45483dd/src/lib/structures/Argument.ts#L18">src/lib/structures/Argument.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/909efb7/src/lib/structures/Argument.ts#L90">src/lib/structures/Argument.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
