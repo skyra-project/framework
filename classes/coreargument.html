@@ -147,7 +147,7 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="coreargument.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#aliases" class="tsd-kind-icon">aliases</a></li>
@@ -155,7 +155,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#extras" class="tsd-kind-icon">extras</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#roleregex" class="tsd-kind-icon">role<wbr>Regex</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#store" class="tsd-kind-icon">store</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#userormemberregex" class="tsd-kind-icon">user<wbr>OrMember<wbr>Regex</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -171,9 +173,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#ok" class="tsd-kind-icon">ok</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#parseid" class="tsd-kind-icon">parseID</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#parsemention" class="tsd-kind-icon">parse<wbr>Mention</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#parsequery" class="tsd-kind-icon">parse<wbr>Query</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#resolvebyid" class="tsd-kind-icon">resolve<wbr>ByID</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="coreargument.html#resolvebyquery" class="tsd-kind-icon">resolve<wbr>ByQuery</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="coreargument.html#run" class="tsd-kind-icon">run</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="coreargument.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
@@ -194,7 +195,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/arguments/CoreBoolean.ts#L7">src/arguments/CoreBoolean.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreBoolean.ts#L7">src/arguments/CoreBoolean.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -208,7 +209,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="aliases" class="tsd-anchor"></a>
@@ -296,6 +297,16 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="roleregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> role<wbr>Regex</h3>
+					<div class="tsd-signature tsd-kind-icon">role<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^(?:&lt;@&amp;)?(\d{17,19})&gt;?$/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreRole.ts#L6">src/arguments/CoreRole.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="store" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> store</h3>
@@ -313,6 +324,17 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="userormemberregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> user<wbr>OrMember<wbr>Regex</h3>
+					<div class="tsd-signature tsd-kind-icon">user<wbr>OrMember<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^(?:&lt;@!?)?(\d{17,19})&gt;?$/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreMember.ts#L6">src/arguments/CoreMember.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreUser.ts#L6">src/arguments/CoreUser.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
@@ -328,7 +350,7 @@
 								<p>Inherited from <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#client">client</a></p>
 								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#client">client</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/lib/structures/base/BaseAliasPiece.ts#L5">src/lib/structures/base/BaseAliasPiece.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -351,7 +373,7 @@
 								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/lib/structures/Argument.ts#L105">src/lib/structures/Argument.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/lib/structures/Argument.ts#L105">src/lib/structures/Argument.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +403,7 @@
 								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/lib/structures/Argument.ts#L113">src/lib/structures/Argument.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/lib/structures/Argument.ts#L113">src/lib/structures/Argument.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +448,7 @@
 								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#ok">ok</a></p>
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#ok">ok</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/lib/structures/Argument.ts#L96">src/lib/structures/Argument.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/lib/structures/Argument.ts#L96">src/lib/structures/Argument.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,16 +520,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="parseid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parseID</h3>
+					<a name="resolvebyid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> resolve<wbr>ByID</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">parseID<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>ByID<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/arguments/CoreMember.ts#L22">src/arguments/CoreMember.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreMember.ts#L22">src/arguments/CoreMember.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -524,42 +546,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="parsemention" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Mention</h3>
+					<a name="resolvebyquery" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> resolve<wbr>ByQuery</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Mention<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>ByQuery<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/arguments/CoreMember.ts#L33">src/arguments/CoreMember.ts:33</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>argument: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>guild: <span class="tsd-signature-type">Guild</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="parsequery" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Query</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Query<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/arguments/CoreMember.ts#L38">src/arguments/CoreMember.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreMember.ts#L27">src/arguments/CoreMember.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -586,7 +582,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7ac3ba0/src/arguments/CoreBoolean.ts#L12">src/arguments/CoreBoolean.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/008dd44/src/arguments/CoreBoolean.ts#L12">src/arguments/CoreBoolean.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -653,8 +649,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreargument.html#path" class="tsd-kind-icon">path</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="coreargument.html#roleregex" class="tsd-kind-icon">role<wbr>Regex</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreargument.html#store" class="tsd-kind-icon">store</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="coreargument.html#userormemberregex" class="tsd-kind-icon">user<wbr>OrMember<wbr>Regex</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="coreargument.html#client" class="tsd-kind-icon">client</a>
@@ -672,13 +674,10 @@
 								<a href="coreargument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="coreargument.html#parseid" class="tsd-kind-icon">parseID</a>
+								<a href="coreargument.html#resolvebyid" class="tsd-kind-icon">resolve<wbr>ByID</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="coreargument.html#parsemention" class="tsd-kind-icon">parse<wbr>Mention</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="coreargument.html#parsequery" class="tsd-kind-icon">parse<wbr>Query</a>
+								<a href="coreargument.html#resolvebyquery" class="tsd-kind-icon">resolve<wbr>ByQuery</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="coreargument.html#run" class="tsd-kind-icon">run</a>
