@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Argument | @sapphire/framework</title>
+	<title>ExtendedArgument | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="argument.html">Argument</a>
+					<a href="extendedargument.html">ExtendedArgument</a>
 				</li>
 			</ul>
-			<h1>Class Argument&lt;T&gt;</h1>
+			<h1>Class ExtendedArgument&lt;K, T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -65,55 +65,45 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The base argument class. This class is abstract and is to be extended by subclasses implementing the methods. In
-						Sapphire&#39;s workflow, arguments are called when using <a href="args.html">Args</a>&#39;s methods (usually used inside <a href="command.html">Command</a>s by default).</p>
+						<p>The extended argument class. This class is abstract and is to be extended by subclasses which
+							will implement the [[ExtendedArgument#handle]] method.
+							Much like the <a href="argument.html">Argument</a> class, this class handles parsing user-specified command arguments
+							into typed command parameters. However, this class can be used to expand upon an existing
+						argument in order to process its transformed value rather than just the argument string.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><pre><code class="language-typescript"><span class="hljs-comment">// TypeScript:</span>
-<span class="hljs-keyword">import</span> { Argument, ArgumentResult, PieceContext } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sapphire/framework&#x27;</span>;
-<span class="hljs-keyword">import</span> { URL } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;url&#x27;</span>;
+<span class="hljs-keyword">import</span> { ApplyOptions } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/decorators&#x27;</span>;
+<span class="hljs-keyword">import</span> { ArgumentResult, ExtendedArgument, ExtendedArgumentContext, ExtendedArgumentOptions } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/framework&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { Channel, TextChannel } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;discord.js&#x27;</span>;
 
-<span class="hljs-comment">// Define a class extending `Argument`, then export it.</span>
-<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> You can use `export default` or `export =` too.</span>
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoreArgument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Argument</span>&lt;<span class="hljs-title">URL</span>&gt; </span>{
-  <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">context: PieceContext</span>)</span> {
-    <span class="hljs-built_in">super</span>(context, { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;hyperlink&#x27;</span>, <span class="hljs-attr">aliases</span>: [<span class="hljs-string">&#x27;url&#x27;</span>] });
-  }
-
-  <span class="hljs-keyword">public</span> run(argument: <span class="hljs-built_in">string</span>): ArgumentResult&lt;URL&gt; {
-    <span class="hljs-keyword">try</span> {
-      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.ok(<span class="hljs-keyword">new</span> URL(argument));
-    } <span class="hljs-keyword">catch</span> {
-      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentHyperlinkInvalidURL&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a valid URL.&#x27;</span>);
-    }
-  }
-}
-
-<span class="hljs-comment">// Augment the ArgType structure so `args.pick(&#x27;url&#x27;)`, `args.repeat(&#x27;url&#x27;)`</span>
-<span class="hljs-comment">// and others have a return type of `URL`.</span>
-<span class="hljs-keyword">declare</span> <span class="hljs-built_in">module</span> <span class="hljs-string">&#x27;sapphire/framework/dist/lib/utils/Args&#x27;</span> {
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> ArgType {
-    <span class="hljs-attr">url</span>: URL;
+<span class="hljs-comment">// Just like with `Argument`, you can use `export default` or `export =` too.</span>
+<span class="hljs-meta">@ApplyOptions</span>&lt;ExtendedArgumentOptions&gt;({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;textChannel&#x27;</span>,
+  <span class="hljs-attr">baseArgument</span>: <span class="hljs-string">&#x27;channel&#x27;</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextChannelArgument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ExtendedArgument</span>&lt;&#x27;<span class="hljs-title">channel</span>&#x27;, <span class="hljs-title">TextChannel</span>&gt; </span>{
+  <span class="hljs-keyword">public</span> handle(parsed: Channel, { argument }: ExtendedArgumentContext): ArgumentResult&lt;TextChannel&gt; {
+    <span class="hljs-keyword">return</span> parsed.type === <span class="hljs-string">&#x27;text&#x27;</span>
+      ? <span class="hljs-built_in">this</span>.ok(parsed <span class="hljs-keyword">as</span> TextChannel)
+      : <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentTextChannelInvalidTextChannel&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a text channel.&#x27;</span>);
   }
 }</code></pre>
 						</dd>
 						<dt>example</dt>
 						<dd><pre><code class="language-javascript"><span class="hljs-comment">// JavaScript:</span>
-<span class="hljs-keyword">const</span> { Argument } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;sapphire/framework&#x27;</span>);
+<span class="hljs-keyword">const</span> { ExtendedArgument } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@sapphire/framework&#x27;</span>);
 
-<span class="hljs-comment">// Define a class extending `Argument`, then export it.</span>
-<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoreArgument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Argument</span> </span>{
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextChannelArgument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ExtendedArgument</span> </span>{
   <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">context</span>)</span> {
-    <span class="hljs-built_in">super</span>(context, { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;hyperlink&#x27;</span>, <span class="hljs-attr">aliases</span>: [<span class="hljs-string">&#x27;url&#x27;</span>] });
+    <span class="hljs-built_in">super</span>(context, { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;textChannel&#x27;</span>, <span class="hljs-attr">baseArgument</span>: <span class="hljs-string">&#x27;channel&#x27;</span> });
   }
 
-  <span class="hljs-function"><span class="hljs-title">run</span>(<span class="hljs-params">argument</span>)</span> {
-    <span class="hljs-keyword">try</span> {
-      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.ok(<span class="hljs-keyword">new</span> URL(argument));
-    } <span class="hljs-keyword">catch</span> {
-      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentHyperlinkInvalidURL&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a valid URL.&#x27;</span>);
-    }
+  <span class="hljs-function"><span class="hljs-title">handle</span>(<span class="hljs-params">parsed, { argument }</span>)</span> {
+    <span class="hljs-keyword">return</span> parsed.type === <span class="hljs-string">&#x27;text&#x27;</span>
+      ? <span class="hljs-built_in">this</span>.ok(parsed)
+      : <span class="hljs-built_in">this</span>.error(argument, <span class="hljs-string">&#x27;ArgumentTextChannelInvalidTextChannel&#x27;</span>, <span class="hljs-string">&#x27;The argument did not resolve to a text channel/&#x27;</span>);
   }
 }</code></pre>
 						</dd>
@@ -124,7 +114,10 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+						<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/argtype.html" class="tsd-signature-type">ArgType</a></h4>
+					</li>
+					<li>
+						<h4>T</h4>
 					</li>
 				</ul>
 			</section>
@@ -132,60 +125,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="basealiaspiece.html" class="tsd-signature-type">BaseAliasPiece</a>
+						<a href="argument.html" class="tsd-signature-type">Argument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Argument</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="extendedargument.html" class="tsd-signature-type">ExtendedArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-									<li>
-										<a href="coreargument.html" class="tsd-signature-type">CoreArgument</a>
-									</li>
-								</ul>
+								<span class="target">ExtendedArgument</span>
 							</li>
 						</ul>
 					</li>
@@ -201,58 +144,60 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="argument.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="extendedargument.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#aliases" class="tsd-kind-icon">aliases</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#enabled" class="tsd-kind-icon">enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#extras" class="tsd-kind-icon">extras</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#store" class="tsd-kind-icon">store</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#aliases" class="tsd-kind-icon">aliases</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="extendedargument.html#baseargument" class="tsd-kind-icon">base<wbr>Argument</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#enabled" class="tsd-kind-icon">enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#extras" class="tsd-kind-icon">extras</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#store" class="tsd-kind-icon">store</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#client" class="tsd-kind-icon">client</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="extendedargument.html#base" class="tsd-kind-icon">base</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#client" class="tsd-kind-icon">client</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="argument.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="argument.html#ok" class="tsd-kind-icon">ok</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="argument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="argument.html#run" class="tsd-kind-icon">run</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="argument.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="extendedargument.html#handle" class="tsd-kind-icon">handle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#ok" class="tsd-kind-icon">ok</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedargument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="extendedargument.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="extendedargument.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Argument<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PieceContext</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AliasPieceOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="argument.html" class="tsd-signature-type">Argument</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Argument<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PieceContext</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/extendedargumentoptions.html" class="tsd-signature-type">ExtendedArgumentOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedargument.html" class="tsd-signature-type">ExtendedArgument</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#constructor">constructor</a></p>
-								<p>Overrides <a href="basepiece.html">BasePiece</a>.<a href="basepiece.html#constructor">constructor</a></p>
+								<p>Overrides <a href="basealiaspiece.html">BaseAliasPiece</a>.<a href="basealiaspiece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/AliasPiece.d.ts:16</li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/ExtendedArgument.ts#L53">src/lib/structures/ExtendedArgument.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,15 +206,15 @@
 									<h5>context: <span class="tsd-signature-type">PieceContext</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">AliasPieceOptions</span></h5>
+									<h5>options: <a href="../interfaces/extendedargumentoptions.html" class="tsd-signature-type">ExtendedArgumentOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="argument.html" class="tsd-signature-type">Argument</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="extendedargument.html" class="tsd-signature-type">ExtendedArgument</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="aliases" class="tsd-anchor"></a>
@@ -286,6 +231,16 @@
 							<p>The aliases for the piece.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="baseargument" class="tsd-anchor"></a>
+					<h3>base<wbr>Argument</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Argument<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/ExtendedArgument.ts#L53">src/lib/structures/ExtendedArgument.ts:53</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="enabled" class="tsd-anchor"></a>
@@ -369,8 +324,31 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="base" class="tsd-anchor"></a>
+					<h3>base</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> base<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/iargument.html" class="tsd-signature-type">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArgType</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/ExtendedArgument.ts#L64">src/lib/structures/ExtendedArgument.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Represents the underlying argument that transforms the raw argument
+									into the value used to compute the extended argument&#39;s value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/iargument.html" class="tsd-signature-type">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArgType</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="client" class="tsd-anchor"></a>
 					<h3>client</h3>
@@ -392,16 +370,17 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="error" class="tsd-anchor"></a>
 					<h3>error</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>parameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>parameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/Argument.ts#L106">src/lib/structures/Argument.ts:106</a></li>
 								</ul>
@@ -430,6 +409,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#error">error</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/Argument.ts#L114">src/lib/structures/Argument.ts:114</a></li>
 								</ul>
@@ -465,14 +445,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> handle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<span class="tsd-signature-symbol">(</span>parsed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArgType</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/extendedargumentcontext.html" class="tsd-signature-type">ExtendedArgumentContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/ExtendedArgument.ts#L76">src/lib/structures/ExtendedArgument.ts:76</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parsed: <span class="tsd-signature-type">ArgType</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/extendedargumentcontext.html" class="tsd-signature-type">ExtendedArgumentContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="ok" class="tsd-anchor"></a>
 					<h3>ok</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">ok<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="argument.html">Argument</a>.<a href="argument.html#ok">ok</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/Argument.ts#L97">src/lib/structures/Argument.ts:97</a></li>
 								</ul>
@@ -543,18 +550,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="run" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> run</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/argumentcontext.html" class="tsd-signature-type">ArgumentContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<h3>run</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/argumentcontext.html" class="tsd-signature-type">ArgumentContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#asyncargumentresult" class="tsd-signature-type">AsyncArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iargument.html">IArgument</a>.<a href="../interfaces/iargument.html#run">run</a></p>
+								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/Argument.ts#L91">src/lib/structures/Argument.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/8fa9e7b/src/lib/structures/ExtendedArgument.ts#L68">src/lib/structures/ExtendedArgument.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -566,7 +574,7 @@
 									<h5>context: <a href="../interfaces/argumentcontext.html" class="tsd-signature-type">ArgumentContext</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#argumentresult" class="tsd-signature-type">ArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#asyncargumentresult" class="tsd-signature-type">AsyncArgumentResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -604,49 +612,58 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-has-type-parameter">
-						<a href="argument.html" class="tsd-kind-icon">Argument</a>
+						<a href="extendedargument.html" class="tsd-kind-icon">Extended<wbr>Argument</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="argument.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="extendedargument.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#aliases" class="tsd-kind-icon">aliases</a>
+								<a href="extendedargument.html#aliases" class="tsd-kind-icon">aliases</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="extendedargument.html#baseargument" class="tsd-kind-icon">base<wbr>Argument</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#enabled" class="tsd-kind-icon">enabled</a>
+								<a href="extendedargument.html#enabled" class="tsd-kind-icon">enabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#extras" class="tsd-kind-icon">extras</a>
+								<a href="extendedargument.html#extras" class="tsd-kind-icon">extras</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#name" class="tsd-kind-icon">name</a>
+								<a href="extendedargument.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#path" class="tsd-kind-icon">path</a>
+								<a href="extendedargument.html#path" class="tsd-kind-icon">path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#store" class="tsd-kind-icon">store</a>
+								<a href="extendedargument.html#store" class="tsd-kind-icon">store</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="extendedargument.html#base" class="tsd-kind-icon">base</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#client" class="tsd-kind-icon">client</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="argument.html#error" class="tsd-kind-icon">error</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="argument.html#ok" class="tsd-kind-icon">ok</a>
+								<a href="extendedargument.html#client" class="tsd-kind-icon">client</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="argument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
+								<a href="extendedargument.html#error" class="tsd-kind-icon">error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="argument.html#run" class="tsd-kind-icon">run</a>
+								<a href="extendedargument.html#handle" class="tsd-kind-icon">handle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="extendedargument.html#ok" class="tsd-kind-icon">ok</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="extendedargument.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="extendedargument.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="extendedargument.html#run" class="tsd-kind-icon">run</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="argument.html#tojson" class="tsd-kind-icon">toJSON</a>
+								<a href="extendedargument.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 						</ul>
 					</li>
