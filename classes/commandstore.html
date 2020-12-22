@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="basealiasstore.html" class="tsd-signature-type">BaseAliasStore</a><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">AliasStore</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">CommandStore</span>
@@ -102,23 +102,19 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#constructor-1" class="tsd-kind-icon">Constructor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#aliases" class="tsd-kind-icon">aliases</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#client" class="tsd-kind-icon">client</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#paths" class="tsd-kind-icon">paths</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#strategy" class="tsd-kind-icon">strategy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="commandstore.html#default" class="tsd-kind-icon">default</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="commandstore.html#defaultstrategy" class="tsd-kind-icon">default<wbr>Strategy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="commandstore.html#injectedcontext" class="tsd-kind-icon">injected<wbr>Context</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="commandstore.html#extras" class="tsd-kind-icon">extras</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="commandstore.html#context" class="tsd-kind-icon">context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -176,22 +172,16 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Command<wbr>Store<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="commandstore.html" class="tsd-signature-type">CommandStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Command<wbr>Store<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="commandstore.html" class="tsd-signature-type">CommandStore</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#constructor">constructor</a></p>
+								<p>Overrides Store.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fbf8624/src/lib/structures/CommandStore.ts#L9">src/lib/structures/CommandStore.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/2652a9b/src/lib/structures/CommandStore.ts#L8">src/lib/structures/CommandStore.ts:8</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>client: <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="commandstore.html" class="tsd-signature-type">CommandStore</a></h4>
 						</li>
 					</ul>
@@ -204,9 +194,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> Constructor</h3>
 					<div class="tsd-signature tsd-kind-icon">Constructor<span class="tsd-signature-symbol">:</span> <a href="commandstore.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#constructor-1">Constructor</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#constructor-1">Constructor</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:152</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:143</li>
 						</ul>
 					</aside>
 				</section>
@@ -215,9 +205,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> aliases</h3>
 					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#aliases">aliases</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#aliases">aliases</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/AliasStore.d.ts:11</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:397</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -227,79 +217,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="client" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> client</h3>
-					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_discord_js_.client.html" class="tsd-signature-type">Client</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#client">client</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fbf8624/src/lib/structures/base/BaseAliasStore.ts#L9">src/lib/structures/base/BaseAliasStore.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="filterhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> filter<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Hook<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsFilterHook</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#filterhook">filterHook</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:155</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="loadhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> load<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">load<wbr>Hook<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsLoadHook</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#loadhook">loadHook</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:157</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#name">name</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#name">name</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:153</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onerror" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Error</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsErrorHandler</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#onerror">onError</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:160</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onpostload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Post<wbr>Load</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Post<wbr>Load<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsPostLoadHandler</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#onpostload">onPostLoad</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:158</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onunload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Unload</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsUnLoadHandler</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#onunload">onUnload</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:159</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:144</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,20 +232,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> paths</h3>
 					<div class="tsd-signature tsd-kind-icon">paths<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#paths">paths</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#paths">paths</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:154</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="preloadhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> preload<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">preload<wbr>Hook<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StoreOptionsPreLoadHook</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#preloadhook">preloadHook</a></p>
-						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:156</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:145</li>
 						</ul>
 					</aside>
 				</section>
@@ -330,9 +243,20 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> size</h3>
 					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#size">size</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#size">size</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.es2015.collection.d.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="strategy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILoaderStrategy</span><span class="tsd-signature-symbol">&lt;</span><a href="command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#strategy">strategy</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:146</li>
 						</ul>
 					</aside>
 				</section>
@@ -341,31 +265,128 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> default</h3>
 					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Collection</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#default">default</a></p>
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#default">default</a></p>
 						<ul>
 							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:17</li>
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultstrategy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILoaderStrategy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#defaultstrategy">defaultStrategy</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:284</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default strategy, defaults to [[LoaderStrategy]], which is constructed on demand when a store is constructed,
+							when none was set beforehand.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="injectedcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> injected<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">injected<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_pieces_.piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#injectedcontext">injectedContext</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:279</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The injected variables that will be accessible to all stores and pieces. To add an extra property, simply mutate
+							the object to add it, and this will update all stores and pieces simultaneously.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Add a reference to the Client:</span>
+<span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;(at)sapphire/pieces&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SapphireClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Client</span> </span>{
+  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">options</span>)</span> {
+    <span class="hljs-built_in">super</span>(options);
+
+    Store.injectedContext.client = <span class="hljs-built_in">this</span>;
+  }
+}
+
+<span class="hljs-comment">// Can be placed anywhere in a TypeScript file, for JavaScript projects,</span>
+<span class="hljs-comment">// you can create an `augments.d.ts` and place the code there.</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-built_in">module</span> <span class="hljs-string">&#x27;(at)sapphire/pieces&#x27;</span> {
+  <span class="hljs-keyword">interface</span> PieceContextExtras {
+    <span class="hljs-attr">client</span>: SapphireClient;
+  }
+}
+
+<span class="hljs-comment">// In any piece, core, plugin, or custom:</span>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserCommand</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Command</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-title">run</span>(<span class="hljs-params">message, args</span>)</span> {
+    <span class="hljs-comment">// The injected client is available here:</span>
+    <span class="hljs-keyword">const</span> { client } = <span class="hljs-built_in">this</span>.context;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}</code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// In a plugin&#x27;s context, e.g. API:</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Api</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Plugin</span> </span>{
+  <span class="hljs-keyword">static</span> [postInitialization]() {
+    <span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> Server(<span class="hljs-built_in">this</span>);
+    Store.injectedContext.server = server;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}
+
+<span class="hljs-keyword">declare</span> <span class="hljs-built_in">module</span> <span class="hljs-string">&#x27;(at)sapphire/pieces&#x27;</span> {
+  <span class="hljs-keyword">interface</span> PieceContextExtras {
+    <span class="hljs-attr">server</span>: Server;
+  }
+}
+
+<span class="hljs-comment">// In any piece, even those that aren&#x27;t routes nor middlewares:</span>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserRoute</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Route</span> </span>{
+  <span class="hljs-keyword">public</span> [methods.POST](message, args) {
+    <span class="hljs-comment">// The injected server is available here:</span>
+    <span class="hljs-keyword">const</span> { server } = <span class="hljs-built_in">this</span>.context;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}</code></pre>
+							</dd>
+						</dl>
+					</div>
+				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-					<a name="extras" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> extras</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> extras<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PieceContextExtras</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_pieces_.piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#extras">extras</a></p>
-								<p>Overrides Store.extras</p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#context">context</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fbf8624/src/lib/structures/base/BaseAliasStore.ts#L21">src/lib/structures/base/BaseAliasStore.ts:21</a></li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:155</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PieceContextExtras</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The extras to be used for dependency injection in all pieces. Returns a reference of [[Store.defaultExtras]].</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_pieces_.piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -381,7 +402,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#array">array</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#array">array</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:62</li>
 								</ul>
@@ -407,7 +428,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#clear">clear</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#clear">clear</a></p>
 								<p>Overrides Map.clear</p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:54</li>
@@ -432,7 +453,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#clone">clone</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#clone">clone</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:267</li>
 								</ul>
@@ -460,7 +481,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#concat">concat</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#concat">concat</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:274</li>
 								</ul>
@@ -497,9 +518,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#construct">construct</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:215</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:201</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -541,7 +562,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#delete">delete</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#delete">delete</a></p>
 								<p>Overrides Map.delete</p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:48</li>
@@ -576,7 +597,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#difference">difference</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#difference">difference</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:305</li>
 								</ul>
@@ -609,7 +630,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#each">each</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#each">each</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:247</li>
 								</ul>
@@ -666,7 +687,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#each">each</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#each">each</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:248</li>
 								</ul>
@@ -726,7 +747,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#equals">equals</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#equals">equals</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:282</li>
 								</ul>
@@ -762,7 +783,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#every">every</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#every">every</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:222</li>
 								</ul>
@@ -815,7 +836,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#every">every</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#every">every</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:223</li>
 								</ul>
@@ -876,7 +897,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#filter">filter</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#filter">filter</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:162</li>
 								</ul>
@@ -930,7 +951,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#filter">filter</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#filter">filter</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:163</li>
 								</ul>
@@ -991,7 +1012,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#find">find</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#find">find</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:132</li>
 								</ul>
@@ -1047,7 +1068,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#find">find</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#find">find</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:133</li>
 								</ul>
@@ -1108,7 +1129,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#findkey">findKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#findkey">findKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:143</li>
 								</ul>
@@ -1162,7 +1183,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#findkey">findKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#findkey">findKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:144</li>
 								</ul>
@@ -1223,7 +1244,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#first">first</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#first">first</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:77</li>
 								</ul>
@@ -1239,7 +1260,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#first">first</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#first">first</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:78</li>
 								</ul>
@@ -1264,7 +1285,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#firstkey">firstKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#firstkey">firstKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:85</li>
 								</ul>
@@ -1280,7 +1301,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#firstkey">firstKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#firstkey">firstKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:86</li>
 								</ul>
@@ -1305,7 +1326,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#flatmap">flatMap</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#flatmap">flatMap</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:182</li>
 								</ul>
@@ -1364,7 +1385,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#flatmap">flatMap</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#flatmap">flatMap</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:183</li>
 								</ul>
@@ -1427,7 +1448,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#foreach">forEach</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#foreach">forEach</a></p>
 								<ul>
 									<li>Defined in node_modules/typescript/lib/lib.es2015.collection.d.ts:24</li>
 								</ul>
@@ -1478,10 +1499,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#get">get</a></p>
-								<p>Overrides <a href="basestore.html">BaseStore</a>.<a href="basestore.html#get">get</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#get">get</a></p>
+								<p>Overrides <a href="eventstore.html">EventStore</a>.<a href="eventstore.html#get">get</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/AliasStore.d.ts:16</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:402</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1511,7 +1532,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#has">has</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#has">has</a></p>
 								<p>Overrides Map.has</p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:41</li>
@@ -1546,10 +1567,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#insert">insert</a></p>
-								<p>Overrides <a href="basestore.html">BaseStore</a>.<a href="basestore.html#insert">insert</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#insert">insert</a></p>
+								<p>Overrides <a href="eventstore.html">EventStore</a>.<a href="eventstore.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/AliasStore.d.ts:28</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:414</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1580,7 +1601,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#intersect">intersect</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#intersect">intersect</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:299</li>
 								</ul>
@@ -1612,7 +1633,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#keyarray">keyArray</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#keyarray">keyArray</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:70</li>
 								</ul>
@@ -1639,7 +1660,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#last">last</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#last">last</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:94</li>
 								</ul>
@@ -1656,7 +1677,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#last">last</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#last">last</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:95</li>
 								</ul>
@@ -1681,7 +1702,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#lastkey">lastKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#lastkey">lastKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:103</li>
 								</ul>
@@ -1698,7 +1719,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#lastkey">lastKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#lastkey">lastKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:104</li>
 								</ul>
@@ -1722,9 +1743,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#load">load</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#load">load</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:182</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:172</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1755,9 +1776,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#loadall">loadAll</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#loadall">loadAll</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:192</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:182</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1779,7 +1800,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#map">map</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#map">map</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:192</li>
 								</ul>
@@ -1838,7 +1859,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#map">map</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#map">map</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:193</li>
 								</ul>
@@ -1902,7 +1923,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#mapvalues">mapValues</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#mapvalues">mapValues</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:202</li>
 								</ul>
@@ -1961,7 +1982,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#mapvalues">mapValues</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#mapvalues">mapValues</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:203</li>
 								</ul>
@@ -2025,7 +2046,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#partition">partition</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#partition">partition</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:172</li>
 								</ul>
@@ -2078,7 +2099,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#partition">partition</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#partition">partition</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:173</li>
 								</ul>
@@ -2139,7 +2160,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#random">random</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#random">random</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:111</li>
 								</ul>
@@ -2155,7 +2176,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#random">random</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#random">random</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:112</li>
 								</ul>
@@ -2180,7 +2201,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#randomkey">randomKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#randomkey">randomKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:119</li>
 								</ul>
@@ -2196,7 +2217,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#randomkey">randomKey</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#randomkey">randomKey</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:120</li>
 								</ul>
@@ -2220,7 +2241,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#reduce">reduce</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#reduce">reduce</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:233</li>
 								</ul>
@@ -2295,9 +2316,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#registerpath">registerPath</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#registerpath">registerPath</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:176</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:166</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2334,9 +2355,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#resolve">resolve</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/Store.d.ts:198</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:188</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2367,7 +2388,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#set">set</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#set">set</a></p>
 								<p>Overrides Map.set</p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:34</li>
@@ -2408,7 +2429,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#some">some</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#some">some</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:212</li>
 								</ul>
@@ -2461,7 +2482,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#some">some</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#some">some</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:213</li>
 								</ul>
@@ -2521,7 +2542,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#sort">sort</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#sort">sort</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:293</li>
 								</ul>
@@ -2557,7 +2578,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#sorted">sorted</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#sorted">sorted</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:316</li>
 								</ul>
@@ -2594,7 +2615,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#sweep">sweep</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#sweep">sweep</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:151</li>
 								</ul>
@@ -2642,7 +2663,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#sweep">sweep</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#sweep">sweep</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:152</li>
 								</ul>
@@ -2703,7 +2724,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#tap">tap</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#tap">tap</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:260</li>
 								</ul>
@@ -2752,7 +2773,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#tap">tap</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#tap">tap</a></p>
 								<ul>
 									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:261</li>
 								</ul>
@@ -2806,10 +2827,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="basealiasstore.html">BaseAliasStore</a>.<a href="basealiasstore.html#unload">unload</a></p>
-								<p>Overrides <a href="basestore.html">BaseStore</a>.<a href="basestore.html#unload">unload</a></p>
+								<p>Inherited from <a href="argumentstore.html">ArgumentStore</a>.<a href="argumentstore.html#unload">unload</a></p>
+								<p>Overrides <a href="eventstore.html">EventStore</a>.<a href="eventstore.html#unload">unload</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/lib/AliasStore.d.ts:22</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:408</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2858,40 +2879,28 @@
 								<a href="commandstore.html#aliases" class="tsd-kind-icon">aliases</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#client" class="tsd-kind-icon">client</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="commandstore.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="commandstore.html#paths" class="tsd-kind-icon">paths</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a>
+								<a href="commandstore.html#size" class="tsd-kind-icon">size</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="commandstore.html#size" class="tsd-kind-icon">size</a>
+								<a href="commandstore.html#strategy" class="tsd-kind-icon">strategy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="commandstore.html#default" class="tsd-kind-icon">default</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
-								<a href="commandstore.html#extras" class="tsd-kind-icon">extras</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="commandstore.html#defaultstrategy" class="tsd-kind-icon">default<wbr>Strategy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="commandstore.html#injectedcontext" class="tsd-kind-icon">injected<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="commandstore.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="commandstore.html#array" class="tsd-kind-icon">array</a>
