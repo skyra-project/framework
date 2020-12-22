@@ -117,12 +117,13 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command.html#disable" class="tsd-kind-icon">disable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command.html#preparse" class="tsd-kind-icon">pre<wbr>Parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command.html#reload" class="tsd-kind-icon">reload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command.html#run" class="tsd-kind-icon">run</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="command.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command.html#unload" class="tsd-kind-icon">unload</a></li>
 							</ul>
 						</section>
 					</div>
@@ -141,7 +142,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L40">src/lib/structures/Command.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L40">src/lib/structures/Command.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -189,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">#lexer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Lexer</span><span class="tsd-signature-symbol"> = new Lexure.Lexer()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L40">src/lib/structures/Command.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L40">src/lib/structures/Command.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -210,7 +211,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="command.html">Command</a>.<a href="command.html#aliases">aliases</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:389</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:450</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L14">src/lib/structures/Command.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L14">src/lib/structures/Command.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -245,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">detailed<wbr>Description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L26">src/lib/structures/Command.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L26">src/lib/structures/Command.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -266,7 +267,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#enabled">enabled</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:351</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:264</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,7 +283,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#name">name</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:347</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:260</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,7 +299,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#path">path</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:343</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:256</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +314,7 @@
 					<div class="tsd-signature tsd-kind-icon">preconditions<span class="tsd-signature-symbol">:</span> <a href="preconditioncontainerall.html" class="tsd-signature-type">PreconditionContainerAll</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L20">src/lib/structures/Command.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L20">src/lib/structures/Command.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -334,7 +335,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#store">store</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:339</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:252</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -349,7 +350,7 @@
 					<div class="tsd-signature tsd-kind-icon">strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">UnorderedStrategy</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L32">src/lib/structures/Command.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L32">src/lib/structures/Command.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -377,7 +378,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#context">context</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:357</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:270</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,29 +399,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="disable" class="tsd-anchor"></a>
-					<h3>disable</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">disable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#disable">disable</a></p>
-								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:371</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Disables the piece and removes it from its store</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="onload" class="tsd-anchor"></a>
 					<h3>on<wbr>Load</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -431,7 +409,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#onload">onLoad</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:362</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:275</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -455,7 +433,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#onunload">onUnload</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:367</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:280</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +456,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L67">src/lib/structures/Command.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L67">src/lib/structures/Command.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,6 +483,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="reload" class="tsd-anchor"></a>
+					<h3>reload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#reload">reload</a></p>
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:288</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reloads the piece by loading the same path in the store.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="run" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> run</h3>
@@ -515,7 +516,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L78">src/lib/structures/Command.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L78">src/lib/structures/Command.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -556,7 +557,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="argument.html">Argument</a>.<a href="argument.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7c85e0d/src/lib/structures/Command.ts#L83">src/lib/structures/Command.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/29af5b7/src/lib/structures/Command.ts#L83">src/lib/structures/Command.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,6 +566,29 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="unload" class="tsd-anchor"></a>
+					<h3>unload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="precondition.html">Precondition</a>.<a href="precondition.html#unload">unload</a></p>
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:284</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unloads and disables the piece.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -622,9 +646,6 @@
 								<a href="command.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="command.html#disable" class="tsd-kind-icon">disable</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="command.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -633,11 +654,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="command.html#preparse" class="tsd-kind-icon">pre<wbr>Parse</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="command.html#reload" class="tsd-kind-icon">reload</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="command.html#run" class="tsd-kind-icon">run</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="command.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="command.html#unload" class="tsd-kind-icon">unload</a>
 							</li>
 						</ul>
 					</li>
