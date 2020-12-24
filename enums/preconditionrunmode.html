@@ -62,6 +62,18 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The run mode for a <a href="../classes/preconditioncontainerarray.html">PreconditionContainerArray</a>.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>1.0.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -81,22 +93,44 @@
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="parallel" class="tsd-anchor"></a>
 					<h3>Parallel</h3>
-					<div class="tsd-signature tsd-kind-icon">Parallel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;parallel&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Parallel<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerAny.ts#L11">src/lib/utils/preconditions/PreconditionContainerAny.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L26">src/lib/utils/preconditions/PreconditionContainerArray.ts:26</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All entries are run in parallel using <code>Promise.all</code>, then the results are processed after all of them have
+							completed.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="sequential" class="tsd-anchor"></a>
 					<h3>Sequential</h3>
-					<div class="tsd-signature tsd-kind-icon">Sequential<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sequential&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Sequential<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerAny.ts#L10">src/lib/utils/preconditions/PreconditionContainerAny.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L19">src/lib/utils/preconditions/PreconditionContainerArray.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The entries are run sequentially, this is the default behaviour and can be slow when doing long asynchronous
+							tasks, but is performance savvy.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 		</div>

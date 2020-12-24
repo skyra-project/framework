@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPreconditionContainer | @sapphire/framework</title>
+	<title>IPreconditionCondition | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ipreconditioncontainer.html">IPreconditionContainer</a>
+					<a href="ipreconditioncondition.html">IPreconditionCondition</a>
 				</li>
 			</ul>
-			<h1>Interface IPreconditionContainer</h1>
+			<h1>Interface IPreconditionCondition</h1>
 		</div>
 	</div>
 </header>
@@ -65,7 +65,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An abstracted precondition container to be implemented by classes.</p>
+						<p>Defines the condition for <a href="../classes/preconditioncontainerarray.html">PreconditionContainerArray</a>s to run.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
@@ -78,15 +78,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPreconditionContainer</span>
+						<span class="target">IPreconditionCondition</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/preconditioncontainerarray.html" class="tsd-signature-type">PreconditionContainerArray</a></li>
-					<li><a href="../classes/preconditioncontainersingle.html" class="tsd-signature-type">PreconditionContainerSingle</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,7 +89,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ipreconditioncontainer.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ipreconditioncondition.html#parallel" class="tsd-kind-icon">parallel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ipreconditioncondition.html#sequential" class="tsd-kind-icon">sequential</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,23 +99,26 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="run" class="tsd-anchor"></a>
-					<h3>run</h3>
+					<a name="parallel" class="tsd-anchor"></a>
+					<h3>parallel</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, command<span class="tsd-signature-symbol">: </span><a href="../classes/command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditioncontainerreturn" class="tsd-signature-type">PreconditionContainerReturn</a></li>
+						<li class="tsd-signature tsd-kind-icon">parallel<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, command<span class="tsd-signature-symbol">: </span><a href="../classes/command.html" class="tsd-signature-type">Command</a>, entries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="ipreconditioncontainer.html" class="tsd-signature-type">IPreconditionContainer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditioncontainerreturn" class="tsd-signature-type">PreconditionContainerReturn</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/IPreconditionContainer.ts#L36">src/lib/utils/preconditions/IPreconditionContainer.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/conditions/IPreconditionCondition.ts#L28">src/lib/utils/preconditions/conditions/IPreconditionCondition.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Runs a precondition container.</p>
+									<p>Runs all the containers using <code>Promise.all</code>, then checks the results once all tasks finished running.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>seealso</dt>
+									<dd><p>[[PreconditionRunMode.parallel]]</p>
+									</dd>
 									<dt>since</dt>
 									<dd><p>1.0.0</p>
 									</dd>
@@ -139,6 +136,63 @@
 									<h5>command: <a href="../classes/command.html" class="tsd-signature-type">Command</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The command the message invoked.</p>
+									</div>
+								</li>
+								<li>
+									<h5>entries: <span class="tsd-signature-symbol">readonly </span><a href="ipreconditioncontainer.html" class="tsd-signature-type">IPreconditionContainer</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The containers to run.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#preconditioncontainerreturn" class="tsd-signature-type">PreconditionContainerReturn</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="sequential" class="tsd-anchor"></a>
+					<h3>sequential</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">sequential<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, command<span class="tsd-signature-symbol">: </span><a href="../classes/command.html" class="tsd-signature-type">Command</a>, entries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="ipreconditioncontainer.html" class="tsd-signature-type">IPreconditionContainer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#preconditioncontainerreturn" class="tsd-signature-type">PreconditionContainerReturn</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/conditions/IPreconditionCondition.ts#L18">src/lib/utils/preconditions/conditions/IPreconditionCondition.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Runs the containers one by one.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>seealso</dt>
+									<dd><p>[[PreconditionRunMode.sequential]]</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>1.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The message that ran this precondition.</p>
+									</div>
+								</li>
+								<li>
+									<h5>command: <a href="../classes/command.html" class="tsd-signature-type">Command</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The command the message invoked.</p>
+									</div>
+								</li>
+								<li>
+									<h5>entries: <span class="tsd-signature-symbol">readonly </span><a href="ipreconditioncontainer.html" class="tsd-signature-type">IPreconditionContainer</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The containers to run.</p>
 									</div>
 								</li>
 							</ul>
@@ -161,10 +215,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="ipreconditioncontainer.html" class="tsd-kind-icon">IPrecondition<wbr>Container</a>
+						<a href="ipreconditioncondition.html" class="tsd-kind-icon">IPrecondition<wbr>Condition</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="ipreconditioncontainer.html#run" class="tsd-kind-icon">run</a>
+								<a href="ipreconditioncondition.html#parallel" class="tsd-kind-icon">parallel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="ipreconditioncondition.html#sequential" class="tsd-kind-icon">sequential</a>
 							</li>
 						</ul>
 					</li>

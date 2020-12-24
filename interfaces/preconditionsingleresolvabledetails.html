@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreconditionContainerAnyDetailedData | @sapphire/framework</title>
+	<title>PreconditionSingleResolvableDetails | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,22 +52,41 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="preconditioncontaineranydetaileddata.html">PreconditionContainerAnyDetailedData</a>
+					<a href="preconditionsingleresolvabledetails.html">PreconditionSingleResolvableDetails</a>
 				</li>
 			</ul>
-			<h1>Interface PreconditionContainerAnyDetailedData</h1>
+			<h1>Interface PreconditionSingleResolvableDetails</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Defines the detailed options for the <a href="../classes/preconditioncontainersingle.html">PreconditionContainerSingle</a>, where both the <a href="preconditioncontext.html">PreconditionContext</a> and the
+						name of the precondition can be defined.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>1.0.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PreconditionContainerAnyDetailedData</span>
+						<span class="target">PreconditionSingleResolvableDetails</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/permissionsprecondition.html" class="tsd-signature-type">PermissionsPrecondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -77,8 +96,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontaineranydetaileddata.html#entries" class="tsd-kind-icon">entries</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontaineranydetaileddata.html#mode" class="tsd-kind-icon">mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditionsingleresolvabledetails.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditionsingleresolvabledetails.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,24 +106,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="entries" class="tsd-anchor"></a>
-					<h3>entries</h3>
-					<div class="tsd-signature tsd-kind-icon">entries<span class="tsd-signature-symbol">:</span> <a href="../globals.html#entries" class="tsd-signature-type">Entries</a></div>
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="preconditioncontext.html" class="tsd-signature-type">PreconditionContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerAny.ts#L15">src/lib/utils/preconditions/PreconditionContainerAny.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerSingle.ts#L22">src/lib/utils/preconditions/PreconditionContainerSingle.ts:22</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The context to be set at <a href="../classes/preconditioncontainersingle.html#context">PreconditionContainerSingle.context</a>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3>mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/preconditionrunmode.html" class="tsd-signature-type">PreconditionRunMode</a></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerAny.ts#L16">src/lib/utils/preconditions/PreconditionContainerAny.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerSingle.ts#L16">src/lib/utils/preconditions/PreconditionContainerSingle.ts:16</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the precondition to retrieve from <a href="../classes/sapphireclient.html#preconditions">SapphireClient.preconditions</a>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -121,13 +160,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="preconditioncontaineranydetaileddata.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Any<wbr>Detailed<wbr>Data</a>
+						<a href="preconditionsingleresolvabledetails.html" class="tsd-kind-icon">Precondition<wbr>Single<wbr>Resolvable<wbr>Details</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preconditioncontaineranydetaileddata.html#entries" class="tsd-kind-icon">entries</a>
+								<a href="preconditionsingleresolvabledetails.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preconditioncontaineranydetaileddata.html#mode" class="tsd-kind-icon">mode</a>
+								<a href="preconditionsingleresolvabledetails.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>

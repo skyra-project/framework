@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreconditionContainerSingleEntry | @sapphire/framework</title>
+	<title>PreconditionRunCondition | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,65 +52,78 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="preconditioncontainersingleentry.html">PreconditionContainerSingleEntry</a>
+					<a href="preconditionruncondition.html">PreconditionRunCondition</a>
 				</li>
 			</ul>
-			<h1>Interface PreconditionContainerSingleEntry</h1>
+			<h1>Enumeration PreconditionRunCondition</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">PreconditionContainerSingleEntry</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/permissionsprecondition.html" class="tsd-signature-type">PermissionsPrecondition</a></li>
-				</ul>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The condition for a <a href="../classes/preconditioncontainerarray.html">PreconditionContainerArray</a>.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontainersingleentry.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preconditioncontainersingleentry.html#entry" class="tsd-kind-icon">entry</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionruncondition.html#and" class="tsd-kind-icon">And</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionruncondition.html#or" class="tsd-kind-icon">Or</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="preconditioncontext.html" class="tsd-signature-type">PreconditionContext</a></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="and" class="tsd-anchor"></a>
+					<h3>And</h3>
+					<div class="tsd-signature tsd-kind-icon">And<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerSimple.ts#L8">src/lib/utils/preconditions/PreconditionContainerSimple.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L37">src/lib/utils/preconditions/PreconditionContainerArray.ts:37</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines a condition where all the entries must pass. This uses <a href="../globals.html#preconditionconditionand">PreconditionConditionAnd</a>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="entry" class="tsd-anchor"></a>
-					<h3>entry</h3>
-					<div class="tsd-signature tsd-kind-icon">entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="or" class="tsd-anchor"></a>
+					<h3>Or</h3>
+					<div class="tsd-signature tsd-kind-icon">Or<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/5a4b8d6/src/lib/utils/preconditions/PreconditionContainerSimple.ts#L7">src/lib/utils/preconditions/PreconditionContainerSimple.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10c7a1b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L43">src/lib/utils/preconditions/PreconditionContainerArray.ts:43</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines a condition where at least one entry must pass. This uses <a href="../globals.html#preconditionconditionor">PreconditionConditionOr</a>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -126,14 +139,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="preconditioncontainersingleentry.html" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Single<wbr>Entry</a>
+					<li class="current tsd-kind-enum">
+						<a href="preconditionruncondition.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Condition</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preconditioncontainersingleentry.html#context" class="tsd-kind-icon">context</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="preconditionruncondition.html#and" class="tsd-kind-icon">And</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preconditioncontainersingleentry.html#entry" class="tsd-kind-icon">entry</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="preconditionruncondition.html#or" class="tsd-kind-icon">Or</a>
 							</li>
 						</ul>
 					</li>
