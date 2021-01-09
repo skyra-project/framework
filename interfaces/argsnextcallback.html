@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPieceError | @sapphire/framework</title>
+	<title>ArgsNextCallback | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,57 +53,65 @@
 					<a href="../modules.html">@sapphire/framework</a>
 				</li>
 				<li>
-					<a href="ipieceerror.html">IPieceError</a>
+					<a href="argsnextcallback.html">ArgsNextCallback</a>
 				</li>
 			</ul>
-			<h1>Interface IPieceError</h1>
+			<h1>Interface ArgsNextCallback&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The callback used for <a href="../classes/args.html#nextmaybe">Args.nextMaybe</a> and <a href="../classes/args.html#next">Args.next</a>.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPieceError</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="eventerrorpayload.html" class="tsd-signature-type" data-tsd-kind="Interface">EventErrorPayload</a>
-							</li>
-							<li>
-								<a href="commanderrorpayload.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandErrorPayload</a>
-							</li>
-						</ul>
+						<span class="target">ArgsNextCallback</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipieceerror.html#piece" class="tsd-kind-icon">piece</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">Args<wbr>Next<wbr>Callback<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Args.ts#L665">src/lib/parsers/Args.ts:665</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="piece" class="tsd-anchor"></a>
-					<h3>piece</h3>
-					<div class="tsd-signature tsd-kind-icon">piece<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Piece</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/types/Events.ts#L82">src/lib/types/Events.ts:82</a></li>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The value to be mapped.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>value: <span class="tsd-signature-type">string</span></h5>
+							</li>
 						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <a href="../modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -118,13 +126,8 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="ipieceerror.html" class="tsd-kind-icon">IPiece<wbr>Error</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipieceerror.html#piece" class="tsd-kind-icon">piece</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
+						<a href="argsnextcallback.html" class="tsd-kind-icon">Args<wbr>Next<wbr>Callback</a>
 					</li>
 				</ul>
 				<ul class="after-current">

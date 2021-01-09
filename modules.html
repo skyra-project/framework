@@ -101,6 +101,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/argoptions.html" class="tsd-kind-icon">Arg<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/argtype.html" class="tsd-kind-icon">Arg<wbr>Type</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/argsnextcallback.html" class="tsd-kind-icon">Args<wbr>Next<wbr>Callback</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/argumentcontext.html" class="tsd-kind-icon">Argument<wbr>Context</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/argumentoptions.html" class="tsd-kind-icon">Argument<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/clientloggeroptions.html" class="tsd-kind-icon">Client<wbr>Logger<wbr>Options</a></li>
@@ -142,6 +143,8 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#asyncpreconditionresult" class="tsd-kind-icon">Async<wbr>Precondition<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#err" class="tsd-kind-icon">Err</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#logmethods" class="tsd-kind-icon">Log<wbr>Methods</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#maybe" class="tsd-kind-icon">Maybe</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#none" class="tsd-kind-icon">None</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#ok" class="tsd-kind-icon">Ok</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#preconditionarrayresolvable" class="tsd-kind-icon">Precondition<wbr>Array<wbr>Resolvable</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#preconditioncontainerresult" class="tsd-kind-icon">Precondition<wbr>Container<wbr>Result</a></li>
@@ -152,6 +155,7 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#preconditionsingleresolvable" class="tsd-kind-icon">Precondition<wbr>Single<wbr>Resolvable</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#result" class="tsd-kind-icon">Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#sapphireprefix" class="tsd-kind-icon">Sapphire<wbr>Prefix</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#some" class="tsd-kind-icon">Some</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#syncpluginhooks" class="tsd-kind-icon">Sync<wbr>Plugin<wbr>Hooks</a></li>
 							</ul>
 						</section>
@@ -172,8 +176,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#err" class="tsd-kind-icon">err</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#iserr" class="tsd-kind-icon">is<wbr>Err</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#ismaybe" class="tsd-kind-icon">is<wbr>Maybe</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isnone" class="tsd-kind-icon">is<wbr>None</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isok" class="tsd-kind-icon">is<wbr>Ok</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#issome" class="tsd-kind-icon">is<wbr>Some</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#maybe" class="tsd-kind-icon">maybe</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#none" class="tsd-kind-icon">none</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#ok" class="tsd-kind-icon">ok</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#some" class="tsd-kind-icon">some</a></li>
 							</ul>
 						</section>
 					</div>
@@ -187,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">Argument<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="classes/usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/structures/Argument.ts#L11">src/lib/structures/Argument.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/structures/Argument.ts#L11">src/lib/structures/Argument.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -208,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">Async<wbr>Argument<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="classes/usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/structures/Argument.ts#L16">src/lib/structures/Argument.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/structures/Argument.ts#L16">src/lib/structures/Argument.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">Async<wbr>Plugin<wbr>Hooks<span class="tsd-signature-symbol">:</span> <a href="enums/pluginhook.html#prelogin" class="tsd-signature-type" data-tsd-kind="Enumeration member">PreLogin</a><span class="tsd-signature-symbol"> | </span><a href="enums/pluginhook.html#postlogin" class="tsd-signature-type" data-tsd-kind="Enumeration member">PostLogin</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/PluginManager.ts#L8">src/lib/plugins/PluginManager.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/PluginManager.ts#L8">src/lib/plugins/PluginManager.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">Async<wbr>Precondition<wbr>Container<wbr>Return<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#preconditioncontainerresult" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionContainerResult</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/IPreconditionContainer.ts#L23">src/lib/utils/preconditions/IPreconditionContainer.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/IPreconditionContainer.ts#L23">src/lib/utils/preconditions/IPreconditionContainer.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">Async<wbr>Precondition<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="classes/usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/structures/Precondition.ts#L9">src/lib/structures/Precondition.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/structures/Precondition.ts#L9">src/lib/structures/Precondition.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">Err&lt;E&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Lexure.Err</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L20">src/lib/utils/Result.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L20">src/lib/parsers/Result.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,9 +305,50 @@
 					<div class="tsd-signature tsd-kind-icon">Log<wbr>Methods<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;trace&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;debug&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;info&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;warn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;error&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/logger/Logger.ts#L50">src/lib/utils/logger/Logger.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/logger/Logger.ts#L50">src/lib/utils/logger/Logger.ts:50</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="maybe" class="tsd-anchor"></a>
+					<h3>Maybe</h3>
+					<div class="tsd-signature tsd-kind-icon">Maybe&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#none" class="tsd-signature-type" data-tsd-kind="Type alias">None</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L7">src/lib/parsers/Maybe.ts:7</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type used to express a value that may or may not exist.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The value&#39;s type.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="none" class="tsd-anchor"></a>
+					<h3>None</h3>
+					<div class="tsd-signature tsd-kind-icon">None<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">option.None</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L18">src/lib/parsers/Maybe.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An empty value.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="ok" class="tsd-anchor"></a>
@@ -305,7 +356,7 @@
 					<div class="tsd-signature tsd-kind-icon">Ok&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Lexure.Ok</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L14">src/lib/utils/Result.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L14">src/lib/parsers/Result.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Array<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="modules.html#preconditionentryresolvable" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionEntryResolvable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/preconditionarrayresolvabledetails.html" class="tsd-signature-type" data-tsd-kind="Interface">PreconditionArrayResolvableDetails</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/PreconditionContainerArray.ts#L69">src/lib/utils/preconditions/PreconditionContainerArray.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L69">src/lib/utils/preconditions/PreconditionContainerArray.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -351,7 +402,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Container<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="classes/usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/IPreconditionContainer.ts#L11">src/lib/utils/preconditions/IPreconditionContainer.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/IPreconditionContainer.ts#L11">src/lib/utils/preconditions/IPreconditionContainer.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -371,7 +422,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Container<wbr>Return<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#preconditioncontainerresult" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionContainerResult</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/IPreconditionContainer.ts#L17">src/lib/utils/preconditions/IPreconditionContainer.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/IPreconditionContainer.ts#L17">src/lib/utils/preconditions/IPreconditionContainer.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -391,7 +442,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Entry<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <a href="modules.html#preconditionsingleresolvable" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionSingleResolvable</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#preconditionarrayresolvable" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionArrayResolvable</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/PreconditionContainerArray.ts#L77">src/lib/utils/preconditions/PreconditionContainerArray.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/PreconditionContainerArray.ts#L77">src/lib/utils/preconditions/PreconditionContainerArray.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -417,7 +468,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Error<wbr>Extras<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/errors/PreconditionError.ts#L5">src/lib/errors/PreconditionError.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/errors/PreconditionError.ts#L5">src/lib/errors/PreconditionError.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -427,7 +478,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="classes/usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/structures/Precondition.ts#L8">src/lib/structures/Precondition.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/structures/Precondition.ts#L8">src/lib/structures/Precondition.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -437,7 +488,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Single<wbr>Resolvable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/preconditionsingleresolvabledetails.html" class="tsd-signature-type" data-tsd-kind="Interface">PreconditionSingleResolvableDetails</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/PreconditionContainerSingle.ts#L29">src/lib/utils/preconditions/PreconditionContainerSingle.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/PreconditionContainerSingle.ts#L29">src/lib/utils/preconditions/PreconditionContainerSingle.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -457,7 +508,7 @@
 					<div class="tsd-signature tsd-kind-icon">Result&lt;T, E&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#ok" class="tsd-signature-type" data-tsd-kind="Type alias">Ok</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#err" class="tsd-signature-type" data-tsd-kind="Type alias">Err</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L8">src/lib/utils/Result.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L8">src/lib/parsers/Result.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -491,7 +542,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sapphire<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/SapphireClient.ts#L21">src/lib/SapphireClient.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/SapphireClient.ts#L21">src/lib/SapphireClient.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -505,13 +556,39 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="some" class="tsd-anchor"></a>
+					<h3>Some</h3>
+					<div class="tsd-signature tsd-kind-icon">Some&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">option.Some</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L13">src/lib/parsers/Maybe.ts:13</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A value that exists.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The value&#39;s type.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="syncpluginhooks" class="tsd-anchor"></a>
 					<h3>Sync<wbr>Plugin<wbr>Hooks</h3>
 					<div class="tsd-signature tsd-kind-icon">Sync<wbr>Plugin<wbr>Hooks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/pluginhook.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PluginHook</a><span class="tsd-signature-symbol">, </span><a href="modules.html#asyncpluginhooks" class="tsd-signature-type" data-tsd-kind="Type alias">AsyncPluginHooks</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/PluginManager.ts#L13">src/lib/plugins/PluginManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/PluginManager.ts#L13">src/lib/plugins/PluginManager.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -524,7 +601,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Condition<wbr>And<span class="tsd-signature-symbol">:</span> <a href="interfaces/ipreconditioncondition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPreconditionCondition</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/conditions/PreconditionConditionAnd.ts#L8">src/lib/utils/preconditions/conditions/PreconditionConditionAnd.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/conditions/PreconditionConditionAnd.ts#L8">src/lib/utils/preconditions/conditions/PreconditionConditionAnd.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -544,7 +621,7 @@
 					<div class="tsd-signature tsd-kind-icon">Precondition<wbr>Condition<wbr>Or<span class="tsd-signature-symbol">:</span> <a href="interfaces/ipreconditioncondition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPreconditionCondition</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/preconditions/conditions/PreconditionConditionOr.ts#L9">src/lib/utils/preconditions/conditions/PreconditionConditionOr.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/utils/preconditions/conditions/PreconditionConditionOr.ts#L9">src/lib/utils/preconditions/conditions/PreconditionConditionOr.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -564,7 +641,7 @@
 					<div class="tsd-signature tsd-kind-icon">post<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/symbols.ts#L3">src/lib/plugins/symbols.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/symbols.ts#L3">src/lib/plugins/symbols.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -574,7 +651,7 @@
 					<div class="tsd-signature tsd-kind-icon">post<wbr>Login<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/symbols.ts#L6">src/lib/plugins/symbols.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/symbols.ts#L6">src/lib/plugins/symbols.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -584,7 +661,7 @@
 					<div class="tsd-signature tsd-kind-icon">pre<wbr>Generics<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/symbols.ts#L1">src/lib/plugins/symbols.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/symbols.ts#L1">src/lib/plugins/symbols.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -594,7 +671,7 @@
 					<div class="tsd-signature tsd-kind-icon">pre<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/symbols.ts#L2">src/lib/plugins/symbols.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/symbols.ts#L2">src/lib/plugins/symbols.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -604,7 +681,7 @@
 					<div class="tsd-signature tsd-kind-icon">pre<wbr>Login<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/plugins/symbols.ts#L5">src/lib/plugins/symbols.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/plugins/symbols.ts#L5">src/lib/plugins/symbols.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -622,7 +699,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L42">src/lib/utils/Result.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L42">src/lib/parsers/Result.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -636,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L49">src/lib/utils/Result.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L49">src/lib/parsers/Result.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -677,7 +754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L68">src/lib/utils/Result.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L68">src/lib/parsers/Result.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,6 +788,109 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="ismaybe" class="tsd-anchor"></a>
+					<h3>is<wbr>Maybe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Maybe&lt;T&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Maybe&lt;T&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L88">src/lib/parsers/Maybe.ts:88</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type-safe helper to preserve the type parameter&#39;s type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">true</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L93">src/lib/parsers/Maybe.ts:93</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether or not an arbitrary value is a Maybe.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">unknown</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="isnone" class="tsd-anchor"></a>
+					<h3>is<wbr>None</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>None&lt;T&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">None</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L80">src/lib/parsers/Maybe.ts:80</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether or not a Maybe is a None.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The value&#39;s type.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">None</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="isok" class="tsd-anchor"></a>
 					<h3>is<wbr>Ok</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
@@ -720,7 +900,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L59">src/lib/utils/Result.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L59">src/lib/parsers/Result.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -754,6 +934,187 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="issome" class="tsd-anchor"></a>
+					<h3>is<wbr>Some</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Some&lt;T&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L72">src/lib/parsers/Maybe.ts:72</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether or not a Maybe is a Some.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The value&#39;s type.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="maybe" class="tsd-anchor"></a>
+					<h3>maybe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">maybe&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span></li>
+						<li class="tsd-signature tsd-kind-icon">maybe<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">None</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">None</span></li>
+						<li class="tsd-signature tsd-kind-icon">maybe&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">None</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">maybe&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L24">src/lib/parsers/Maybe.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the maybe itself.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to convert.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">V</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L29">src/lib/parsers/Maybe.ts:29</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a <a href="modules.html#none">None</a> from an existing <a href="modules.html#none">None</a> or a <code>null</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">None</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to convert.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">None</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L34">src/lib/parsers/Maybe.ts:34</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a <a href="modules.html#some">Some</a> from a non-null value or an existing <a href="modules.html#some">Some</a>, or a <a href="modules.html#none">None</a> otherwise.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">None</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to convert.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#maybe" class="tsd-signature-type" data-tsd-kind="Type alias">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L39">src/lib/parsers/Maybe.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a <a href="modules.html#some">Some</a> from a non-null value or an existing <a href="modules.html#some">Some</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to convert.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="none" class="tsd-anchor"></a>
+					<h3>none</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">none<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">None</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L64">src/lib/parsers/Maybe.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a None value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">None</span></h4>
+							<p>A non-existing Maybe.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="ok" class="tsd-anchor"></a>
 					<h3>ok</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
@@ -764,7 +1125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L26">src/lib/utils/Result.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L26">src/lib/parsers/Result.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -778,7 +1139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/7487c55/src/lib/utils/Result.ts#L33">src/lib/utils/Result.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Result.ts#L33">src/lib/parsers/Result.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -806,6 +1167,62 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#ok" class="tsd-signature-type" data-tsd-kind="Type alias">Ok</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A successful Result.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="some" class="tsd-anchor"></a>
+					<h3>some</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">some<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">some&lt;T&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L48">src/lib/parsers/Maybe.ts:48</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a None with no value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An existing Maybe.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/10a6e0b/src/lib/parsers/Maybe.ts#L55">src/lib/parsers/Maybe.ts:55</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a None with a value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>The value&#39;s type.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to use.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#some" class="tsd-signature-type" data-tsd-kind="Type alias">Some</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An existing Maybe.</p>
 						</li>
 					</ul>
 				</section>
@@ -907,6 +1324,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/argtype.html" class="tsd-kind-icon">Arg<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/argsnextcallback.html" class="tsd-kind-icon">Args<wbr>Next<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/argumentcontext.html" class="tsd-kind-icon">Argument<wbr>Context</a>
@@ -1017,6 +1437,12 @@
 						<a href="modules.html#logmethods" class="tsd-kind-icon">Log<wbr>Methods</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#maybe" class="tsd-kind-icon">Maybe</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#none" class="tsd-kind-icon">None</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#ok" class="tsd-kind-icon">Ok</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -1045,6 +1471,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#sapphireprefix" class="tsd-kind-icon">Sapphire<wbr>Prefix</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#some" class="tsd-kind-icon">Some</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#syncpluginhooks" class="tsd-kind-icon">Sync<wbr>Plugin<wbr>Hooks</a>
@@ -1077,10 +1506,28 @@
 						<a href="modules.html#iserr" class="tsd-kind-icon">is<wbr>Err</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#ismaybe" class="tsd-kind-icon">is<wbr>Maybe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isnone" class="tsd-kind-icon">is<wbr>None</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#isok" class="tsd-kind-icon">is<wbr>Ok</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#issome" class="tsd-kind-icon">is<wbr>Some</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#maybe" class="tsd-kind-icon">maybe</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#none" class="tsd-kind-icon">none</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#ok" class="tsd-kind-icon">ok</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#some" class="tsd-kind-icon">some</a>
 					</li>
 				</ul>
 			</nav>
