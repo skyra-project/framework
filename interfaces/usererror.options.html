@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommandErrorPayload | @sapphire/framework</title>
+	<title>Options | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,26 +53,36 @@
 					<a href="../modules.html">@sapphire/framework</a>
 				</li>
 				<li>
-					<a href="commanderrorpayload.html">CommandErrorPayload</a>
+					<a href="../modules/usererror.html">UserError</a>
+				</li>
+				<li>
+					<a href="usererror.options.html">Options</a>
 				</li>
 			</ul>
-			<h1>Interface CommandErrorPayload</h1>
+			<h1>Interface Options</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The options for <a href="../classes/usererror.html">UserError</a>.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>1.0.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="ipieceerror.html" class="tsd-signature-type" data-tsd-kind="Interface">IPieceError</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">CommandErrorPayload</span>
-							</li>
-						</ul>
+						<span class="target">Options</span>
 					</li>
 				</ul>
 			</section>
@@ -83,8 +93,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commanderrorpayload.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="commanderrorpayload.html#piece" class="tsd-kind-icon">piece</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="usererror.options.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="usererror.options.html#identifier" class="tsd-kind-icon">identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="usererror.options.html#message" class="tsd-kind-icon">message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,25 +104,67 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
+					<a name="context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/types/Events.ts#L91">src/lib/types/Events.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L57">src/lib/errors/UserError.ts:57</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The extra context to provide more information about this error.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>null</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-					<a name="piece" class="tsd-anchor"></a>
-					<h3>piece</h3>
-					<div class="tsd-signature tsd-kind-icon">piece<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="identifier" class="tsd-anchor"></a>
+					<h3>identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="ipieceerror.html">IPieceError</a>.<a href="ipieceerror.html#piece">piece</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/types/Events.ts#L90">src/lib/types/Events.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L44">src/lib/errors/UserError.ts:44</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The identifier for this error.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="message" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L50">src/lib/errors/UserError.ts:50</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The message to be passed to the Error constructor.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -121,20 +174,32 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/argumenterror.html">Argument<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/preconditionerror.html">Precondition<wbr>Error</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/usererror.html">User<wbr>Error</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="commanderrorpayload.html" class="tsd-kind-icon">Command<wbr>Error<wbr>Payload</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="usererror.options.html" class="tsd-kind-icon">Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commanderrorpayload.html#message" class="tsd-kind-icon">message</a>
+								<a href="usererror.options.html#context" class="tsd-kind-icon">context</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="commanderrorpayload.html#piece" class="tsd-kind-icon">piece</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="usererror.options.html#identifier" class="tsd-kind-icon">identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="usererror.options.html#message" class="tsd-kind-icon">message</a>
 							</li>
 						</ul>
 					</li>

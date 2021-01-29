@@ -84,12 +84,13 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="extendedargumentcontext.html#argument" class="tsd-kind-icon">argument</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#argument" class="tsd-kind-icon">argument</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#command" class="tsd-kind-icon">command</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#inclusive" class="tsd-kind-icon">inclusive</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#maximum" class="tsd-kind-icon">maximum</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#message" class="tsd-kind-icon">message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="extendedargumentcontext.html#minimum" class="tsd-kind-icon">minimum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="extendedargumentcontext.html#parameter" class="tsd-kind-icon">parameter</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,29 +105,20 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#args">args</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L121">src/lib/structures/Argument.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L115">src/lib/structures/Argument.ts:115</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="argument" class="tsd-anchor"></a>
 					<h3>argument</h3>
-					<div class="tsd-signature tsd-kind-icon">argument<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">argument<span class="tsd-signature-symbol">:</span> <a href="iargument.html" class="tsd-signature-type" data-tsd-kind="Interface">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#argument">argument</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/ExtendedArgument.ts#L96">src/lib/structures/ExtendedArgument.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L114">src/lib/structures/Argument.ts:114</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The canonical argument specified by the user in the command, as
-								a string, equivalent to the first parameter of [[Argument#run]].
-								This allows [[ExtendedArgument#handle]] to access the original
-								argument, which is useful for returning [[Argument#error]] so
-								that you don&#39;t have to convert the parsed argument back into a
-							string.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="command" class="tsd-anchor"></a>
@@ -135,7 +127,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#command">command</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L123">src/lib/structures/Argument.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L117">src/lib/structures/Argument.ts:117</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +138,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#inclusive">inclusive</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L126">src/lib/structures/Argument.ts:126</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L120">src/lib/structures/Argument.ts:120</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +149,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#maximum">maximum</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L125">src/lib/structures/Argument.ts:125</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L119">src/lib/structures/Argument.ts:119</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +160,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L122">src/lib/structures/Argument.ts:122</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L116">src/lib/structures/Argument.ts:116</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,9 +171,29 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="argumentcontext.html">ArgumentContext</a>.<a href="argumentcontext.html#minimum">minimum</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Argument.ts#L124">src/lib/structures/Argument.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Argument.ts#L118">src/lib/structures/Argument.ts:118</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="parameter" class="tsd-anchor"></a>
+					<h3>parameter</h3>
+					<div class="tsd-signature tsd-kind-icon">parameter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/ExtendedArgument.ts#L96">src/lib/structures/ExtendedArgument.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The canonical parameter specified by the user in the command, as
+								a string, equivalent to the first parameter of [[Argument#run]].
+								This allows [[ExtendedArgument#handle]] to access the original
+								argument, which is useful for returning [[Argument#error]] so
+								that you don&#39;t have to convert the parsed argument back into a
+							string.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -203,7 +215,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="extendedargumentcontext.html#args" class="tsd-kind-icon">args</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="extendedargumentcontext.html#argument" class="tsd-kind-icon">argument</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -220,6 +232,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="extendedargumentcontext.html#minimum" class="tsd-kind-icon">minimum</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="extendedargumentcontext.html#parameter" class="tsd-kind-icon">parameter</a>
 							</li>
 						</ul>
 					</li>

@@ -132,62 +132,27 @@
 					<a name="error" class="tsd-anchor"></a>
 					<h3>error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extras<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extras<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/preconditionerror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;identifier&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;message&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;context&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Precondition.ts#L22">src/lib/structures/Precondition.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Precondition.ts#L22">src/lib/structures/Precondition.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Constructs an <a href="argumenterror.html">ArgumentError</a> with [[ArgumentError#type]] set to the [[IArgument<T>#name]].</p>
+									<p>Constructs a <a href="preconditionerror.html">PreconditionError</a> with the precondition parameter set to <code>this</code>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<h5>options: <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/preconditionerror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;identifier&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;message&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;context&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The description message for the rejection.</p>
+										<p>The information.</p>
 									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extras: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Precondition.ts#L29">src/lib/structures/Precondition.ts:29</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Constructs an <a href="argumenterror.html">ArgumentError</a> with a custom type.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The identifier for the error.</p>
-									</div>
-								</li>
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The description message for the rejection.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extras: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -204,7 +169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Precondition.ts#L14">src/lib/structures/Precondition.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Precondition.ts#L14">src/lib/structures/Precondition.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Awaited</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#result" class="tsd-signature-type" data-tsd-kind="Type alias">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -221,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/structures/Precondition.ts#L12">src/lib/structures/Precondition.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/structures/Precondition.ts#L12">src/lib/structures/Precondition.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

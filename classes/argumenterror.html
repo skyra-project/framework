@@ -69,6 +69,9 @@
 						<p>Errors thrown by the argument parser</p>
 					</div>
 					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>1.0.0</p>
+						</dd>
 						<dt>property</dt>
 						<dd><p>name This will be <code>&#39;ArgumentError&#39;</code> and can be used to distinguish the type of error when any error gets thrown</p>
 						</dd>
@@ -110,8 +113,15 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="argumenterror.html#argument" class="tsd-kind-icon">argument</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argumenterror.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="argumenterror.html#identifier" class="tsd-kind-icon">identifier</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="argumenterror.html#parameter" class="tsd-kind-icon">parameter</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="argumenterror.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,14 +133,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Argument<wbr>Error&lt;T&gt;<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><a href="../interfaces/iargument.html" class="tsd-signature-type" data-tsd-kind="Interface">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, parameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="argumenterror.html" class="tsd-signature-type" data-tsd-kind="Class">ArgumentError</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Argument<wbr>Error&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/argumenterror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="argumenterror.html" class="tsd-signature-type" data-tsd-kind="Class">ArgumentError</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/ArgumentError.ts#L10">src/lib/errors/ArgumentError.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/ArgumentError.ts#L11">src/lib/errors/ArgumentError.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -142,16 +152,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>argument: <a href="../interfaces/iargument.html" class="tsd-signature-type" data-tsd-kind="Interface">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>parameter: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<h5>options: <a href="../interfaces/argumenterror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="argumenterror.html" class="tsd-signature-type" data-tsd-kind="Class">ArgumentError</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -167,9 +168,25 @@
 					<div class="tsd-signature tsd-kind-icon">argument<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iargument.html" class="tsd-signature-type" data-tsd-kind="Interface">IArgument</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/ArgumentError.ts#L9">src/lib/errors/ArgumentError.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/ArgumentError.ts#L10">src/lib/errors/ArgumentError.ts:10</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#context">context</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L14">src/lib/errors/UserError.ts:14</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>User-provided context.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="identifier" class="tsd-anchor"></a>
@@ -178,7 +195,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#identifier">identifier</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/UserError.ts#L9">src/lib/errors/UserError.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L9">src/lib/errors/UserError.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,9 +210,29 @@
 					<div class="tsd-signature tsd-kind-icon">parameter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/ArgumentError.ts#L10">src/lib/errors/ArgumentError.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/ArgumentError.ts#L11">src/lib/errors/ArgumentError.ts:11</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/ArgumentError.ts#L20">src/lib/errors/ArgumentError.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -221,10 +258,16 @@
 								<a href="argumenterror.html#argument" class="tsd-kind-icon">argument</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="argumenterror.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="argumenterror.html#identifier" class="tsd-kind-icon">identifier</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="argumenterror.html#parameter" class="tsd-kind-icon">parameter</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="argumenterror.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>

@@ -101,9 +101,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="preconditionerror.html#extras" class="tsd-kind-icon">extras</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preconditionerror.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preconditionerror.html#identifier" class="tsd-kind-icon">identifier</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="preconditionerror.html#precondition" class="tsd-kind-icon">precondition</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="preconditionerror.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,29 +121,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Precondition<wbr>Error<span class="tsd-signature-symbol">(</span>argument<span class="tsd-signature-symbol">: </span><a href="precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, extras<span class="tsd-signature-symbol">?: </span><a href="../modules.html#preconditionerrorextras" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionErrorExtras</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preconditionerror.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionError</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Precondition<wbr>Error<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/preconditionerror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preconditionerror.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/PreconditionError.ts#L13">src/lib/errors/PreconditionError.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/PreconditionError.ts#L9">src/lib/errors/PreconditionError.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>argument: <a href="precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
-								</li>
-								<li>
-									<h5>type: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>extras: <a href="../modules.html#preconditionerrorextras" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionErrorExtras</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<h5>options: <a href="../interfaces/preconditionerror.options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="preconditionerror.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionError</a></h4>
@@ -147,15 +144,21 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="extras" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> extras</h3>
-					<div class="tsd-signature tsd-kind-icon">extras<span class="tsd-signature-symbol">:</span> <a href="../modules.html#preconditionerrorextras" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionErrorExtras</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/PreconditionError.ts#L13">src/lib/errors/PreconditionError.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L14">src/lib/errors/UserError.ts:14</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>User-provided context.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="identifier" class="tsd-anchor"></a>
@@ -164,7 +167,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="usererror.html">UserError</a>.<a href="usererror.html#identifier">identifier</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/UserError.ts#L9">src/lib/errors/UserError.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/UserError.ts#L9">src/lib/errors/UserError.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,9 +182,29 @@
 					<div class="tsd-signature tsd-kind-icon">precondition<span class="tsd-signature-symbol">:</span> <a href="precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/6293ad0/src/lib/errors/PreconditionError.ts#L12">src/lib/errors/PreconditionError.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/PreconditionError.ts#L9">src/lib/errors/PreconditionError.ts:9</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c30ad4c/src/lib/errors/PreconditionError.ts#L17">src/lib/errors/PreconditionError.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -203,14 +226,17 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="preconditionerror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="preconditionerror.html#extras" class="tsd-kind-icon">extras</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preconditionerror.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="preconditionerror.html#identifier" class="tsd-kind-icon">identifier</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="preconditionerror.html#precondition" class="tsd-kind-icon">precondition</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="preconditionerror.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
