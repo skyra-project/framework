@@ -97,6 +97,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#detaileddescription" class="tsd-kind-icon">detailed<wbr>Description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#generatedashlessaliases" class="tsd-kind-icon">generate<wbr>Dash<wbr>Less<wbr>Aliases</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#preconditions" class="tsd-kind-icon">preconditions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#quotes" class="tsd-kind-icon">quotes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandoptions.html#strategyoptions" class="tsd-kind-icon">strategy<wbr>Options</a></li>
@@ -113,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b05da19/src/lib/structures/Command.ts#L102">src/lib/structures/Command.ts:102</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L117">src/lib/structures/Command.ts:117</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -136,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">detailed<wbr>Description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b05da19/src/lib/structures/Command.ts#L109">src/lib/structures/Command.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L124">src/lib/structures/Command.ts:124</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,12 +155,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="generatedashlessaliases" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> generate<wbr>Dash<wbr>Less<wbr>Aliases</h3>
+					<div class="tsd-signature tsd-kind-icon">generate<wbr>Dash<wbr>Less<wbr>Aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L110">src/lib/structures/Command.ts:110</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether to add aliases for commands with dashes in them</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>1.0.0</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>false</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="preconditions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> preconditions</h3>
 					<div class="tsd-signature tsd-kind-icon">preconditions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">readonly </span><a href="../modules.html#preconditionentryresolvable" class="tsd-signature-type" data-tsd-kind="Type alias">PreconditionEntryResolvable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="preconditionarrayresolvabledetails.html" class="tsd-signature-type" data-tsd-kind="Interface">PreconditionArrayResolvableDetails</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b05da19/src/lib/structures/Command.ts#L117">src/lib/structures/Command.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L132">src/lib/structures/Command.ts:132</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">quotes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b05da19/src/lib/structures/Command.ts#L136">src/lib/structures/Command.ts:136</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L151">src/lib/structures/Command.ts:151</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">strategy<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">FlagStrategyOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b05da19/src/lib/structures/Command.ts#L124">src/lib/structures/Command.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/3f09c7f/src/lib/structures/Command.ts#L139">src/lib/structures/Command.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,6 +275,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="commandoptions.html#detaileddescription" class="tsd-kind-icon">detailed<wbr>Description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandoptions.html#generatedashlessaliases" class="tsd-kind-icon">generate<wbr>Dash<wbr>Less<wbr>Aliases</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="commandoptions.html#preconditions" class="tsd-kind-icon">preconditions</a>
