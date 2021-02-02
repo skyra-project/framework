@@ -92,6 +92,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="args.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="args.html#commandcontext" class="tsd-kind-icon">command<wbr>Context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="args.html#message" class="tsd-kind-icon">message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="args.html#parser" class="tsd-kind-icon">parser</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="args.html#states" class="tsd-kind-icon">states</a></li>
@@ -138,13 +139,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Args<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, command<span class="tsd-signature-symbol">: </span><a href="command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span>, parser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Args<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, command<span class="tsd-signature-symbol">: </span><a href="command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span>, parser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/commandcontext.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L38">src/lib/parsers/Args.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L43">src/lib/parsers/Args.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -157,6 +158,9 @@
 								</li>
 								<li>
 									<h5>parser: <span class="tsd-signature-type">Args</span></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/commandcontext.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a></h4>
@@ -172,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L36">src/lib/parsers/Args.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L36">src/lib/parsers/Args.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,12 +186,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="commandcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> command<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">command<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/commandcontext.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandContext</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L41">src/lib/parsers/Args.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The context of the command being run.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="message" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> message</h3>
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L31">src/lib/parsers/Args.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L31">src/lib/parsers/Args.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">parser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Args</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L37">src/lib/parsers/Args.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L42">src/lib/parsers/Args.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">states<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ArgsState</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L38">src/lib/parsers/Args.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L43">src/lib/parsers/Args.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L606">src/lib/parsers/Args.ts:606</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L615">src/lib/parsers/Args.ts:615</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L543">src/lib/parsers/Args.ts:543</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L552">src/lib/parsers/Args.ts:552</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,7 +318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L563">src/lib/parsers/Args.ts:563</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L572">src/lib/parsers/Args.ts:572</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,7 +363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L583">src/lib/parsers/Args.ts:583</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L592">src/lib/parsers/Args.ts:592</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L619">src/lib/parsers/Args.ts:619</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L628">src/lib/parsers/Args.ts:628</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#err" class="tsd-signature-type" data-tsd-kind="Type alias">Err</a><span class="tsd-signature-symbol">&lt;</span><a href="usererror.html" class="tsd-signature-type" data-tsd-kind="Class">UserError</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -407,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L504">src/lib/parsers/Args.ts:504</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L513">src/lib/parsers/Args.ts:513</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L521">src/lib/parsers/Args.ts:521</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L530">src/lib/parsers/Args.ts:530</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -483,7 +502,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L471">src/lib/parsers/Args.ts:471</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L480">src/lib/parsers/Args.ts:480</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L489">src/lib/parsers/Args.ts:489</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L498">src/lib/parsers/Args.ts:498</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -561,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L415">src/lib/parsers/Args.ts:415</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L424">src/lib/parsers/Args.ts:424</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -620,7 +639,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L438">src/lib/parsers/Args.ts:438</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L447">src/lib/parsers/Args.ts:447</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +690,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L454">src/lib/parsers/Args.ts:454</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L463">src/lib/parsers/Args.ts:463</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -726,7 +745,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L341">src/lib/parsers/Args.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L350">src/lib/parsers/Args.ts:350</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -784,7 +803,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L360">src/lib/parsers/Args.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L369">src/lib/parsers/Args.ts:369</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -831,7 +850,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L379">src/lib/parsers/Args.ts:379</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L388">src/lib/parsers/Args.ts:388</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -888,7 +907,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L129">src/lib/parsers/Args.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L136">src/lib/parsers/Args.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,7 +953,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L142">src/lib/parsers/Args.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L149">src/lib/parsers/Args.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -985,7 +1004,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L76">src/lib/parsers/Args.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L82">src/lib/parsers/Args.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1032,7 +1051,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L93">src/lib/parsers/Args.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L99">src/lib/parsers/Args.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1087,7 +1106,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L302">src/lib/parsers/Args.ts:302</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L311">src/lib/parsers/Args.ts:311</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1128,7 +1147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L314">src/lib/parsers/Args.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L323">src/lib/parsers/Args.ts:323</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1178,7 +1197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L247">src/lib/parsers/Args.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L255">src/lib/parsers/Args.ts:255</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1221,7 +1240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L261">src/lib/parsers/Args.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L269">src/lib/parsers/Args.ts:269</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1272,7 +1291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L627">src/lib/parsers/Args.ts:627</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L636">src/lib/parsers/Args.ts:636</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1310,7 +1329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L213">src/lib/parsers/Args.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L221">src/lib/parsers/Args.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1351,7 +1370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L226">src/lib/parsers/Args.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L234">src/lib/parsers/Args.ts:234</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1402,7 +1421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L163">src/lib/parsers/Args.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L170">src/lib/parsers/Args.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1445,7 +1464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L180">src/lib/parsers/Args.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L187">src/lib/parsers/Args.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1499,7 +1518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L599">src/lib/parsers/Args.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L608">src/lib/parsers/Args.ts:608</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1526,7 +1545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L591">src/lib/parsers/Args.ts:591</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L600">src/lib/parsers/Args.ts:600</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1553,7 +1572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L49">src/lib/parsers/Args.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L55">src/lib/parsers/Args.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1575,7 +1594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L610">src/lib/parsers/Args.ts:610</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L619">src/lib/parsers/Args.ts:619</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1604,7 +1623,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L647">src/lib/parsers/Args.ts:647</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L656">src/lib/parsers/Args.ts:656</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1638,7 +1657,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/c6b04e1/src/lib/parsers/Args.ts#L636">src/lib/parsers/Args.ts:636</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/63c195b/src/lib/parsers/Args.ts#L645">src/lib/parsers/Args.ts:645</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1722,6 +1741,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="args.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="args.html#commandcontext" class="tsd-kind-icon">command<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="args.html#message" class="tsd-kind-icon">message</a>
