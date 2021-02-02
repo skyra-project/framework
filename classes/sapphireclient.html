@@ -70,7 +70,7 @@
 						must either use this class, or extend it.</p>
 					</div>
 					<p>Sapphire also automatically detects the folders to scan for pieces, please read
-						<a href="sapphireclient.html#registeruserdirectories">SapphireClient.registerUserDirectories</a> for reference. This method is called at the start of the
+						[[SapphireClient.registerUserDirectories]] for reference. This method is called at the start of the
 					<a href="sapphireclient.html#login">SapphireClient.login</a> method.</p>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
@@ -137,13 +137,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#arguments" class="tsd-kind-icon">arguments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#commands" class="tsd-kind-icon">commands</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#events" class="tsd-kind-icon">events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#fetchprefix" class="tsd-kind-icon">fetch<wbr>Prefix</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#preconditions" class="tsd-kind-icon">preconditions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="sapphireclient.html#stores" class="tsd-kind-icon">stores</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="sapphireclient.html#plugins" class="tsd-kind-icon">plugins</a></li>
 							</ul>
@@ -151,10 +147,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="sapphireclient.html#deregisterstore" class="tsd-kind-icon">deregister<wbr>Store</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="sapphireclient.html#login" class="tsd-kind-icon">login</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="sapphireclient.html#registerstore" class="tsd-kind-icon">register<wbr>Store</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="sapphireclient.html#registeruserdirectories" class="tsd-kind-icon">register<wbr>User<wbr>Directories</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="sapphireclient.html#use" class="tsd-kind-icon">use</a></li>
 							</ul>
 						</section>
@@ -173,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L214">src/lib/SapphireClient.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L191">src/lib/SapphireClient.ts:191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -190,72 +183,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="arguments" class="tsd-anchor"></a>
-					<h3>arguments</h3>
-					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <a href="argumentstore.html" class="tsd-signature-type" data-tsd-kind="Class">ArgumentStore</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L190">src/lib/SapphireClient.ts:190</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The arguments the framework has registered.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="commands" class="tsd-anchor"></a>
-					<h3>commands</h3>
-					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="commandstore.html" class="tsd-signature-type" data-tsd-kind="Class">CommandStore</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L196">src/lib/SapphireClient.ts:196</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The commands the framework has registered.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="events" class="tsd-anchor"></a>
-					<h3>events</h3>
-					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <a href="eventstore.html" class="tsd-signature-type" data-tsd-kind="Class">EventStore</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L202">src/lib/SapphireClient.ts:202</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The events the framework has registered.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="fetchprefix" class="tsd-anchor"></a>
 					<h3>fetch<wbr>Prefix</h3>
 					<div class="tsd-signature tsd-kind-icon">fetch<wbr>Prefix<span class="tsd-signature-symbol">:</span> <a href="../interfaces/sapphireprefixhook.html" class="tsd-signature-type" data-tsd-kind="Interface">SapphirePrefixHook</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L177">src/lib/SapphireClient.ts:177</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L178">src/lib/SapphireClient.ts:178</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -301,7 +234,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L147">src/lib/SapphireClient.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L148">src/lib/SapphireClient.ts:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -321,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/ilogger.html" class="tsd-signature-type" data-tsd-kind="Interface">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L184">src/lib/SapphireClient.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L185">src/lib/SapphireClient.ts:185</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -337,32 +270,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="preconditions" class="tsd-anchor"></a>
-					<h3>preconditions</h3>
-					<div class="tsd-signature tsd-kind-icon">preconditions<span class="tsd-signature-symbol">:</span> <a href="preconditionstore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L208">src/lib/SapphireClient.ts:208</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The precondition the framework has registered.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="stores" class="tsd-anchor"></a>
 					<h3>stores</h3>
-					<div class="tsd-signature tsd-kind-icon">stores<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">stores<span class="tsd-signature-symbol">:</span> <a href="storeregistry.html" class="tsd-signature-type" data-tsd-kind="Class">StoreRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L214">src/lib/SapphireClient.ts:214</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L191">src/lib/SapphireClient.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -382,55 +295,13 @@
 					<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <a href="pluginmanager.html" class="tsd-signature-type" data-tsd-kind="Class">PluginManager</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L336">src/lib/SapphireClient.ts:336</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L261">src/lib/SapphireClient.ts:261</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a name="deregisterstore" class="tsd-anchor"></a>
-					<h3>deregister<wbr>Store</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">deregister<wbr>Store&lt;T&gt;<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sapphireclient.html" class="tsd-signature-type" data-tsd-kind="Class">SapphireClient</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L300">src/lib/SapphireClient.ts:300</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Deregisters a store.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>since</dt>
-									<dd><p>1.0.0</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>store: <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The store to deregister.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="sapphireclient.html" class="tsd-signature-type" data-tsd-kind="Class">SapphireClient</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="login" class="tsd-anchor"></a>
 					<h3>login</h3>
@@ -441,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L311">src/lib/SapphireClient.ts:311</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L236">src/lib/SapphireClient.ts:236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,89 +341,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a name="registerstore" class="tsd-anchor"></a>
-					<h3>register<wbr>Store</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Store&lt;T&gt;<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sapphireclient.html" class="tsd-signature-type" data-tsd-kind="Class">SapphireClient</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L290">src/lib/SapphireClient.ts:290</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Registers a store.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>store: <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The store to register.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="sapphireclient.html" class="tsd-signature-type" data-tsd-kind="Class">SapphireClient</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="registeruserdirectories" class="tsd-anchor"></a>
-					<h3>register<wbr>User<wbr>Directories</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>User<wbr>Directories<span class="tsd-signature-symbol">(</span>rootDirectory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L280">src/lib/SapphireClient.ts:280</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Registers all user directories from the process working directory, the default value is obtained by assuming
-										CommonJS (high accuracy) but with fallback for ECMAScript Modules (reads package.json&#39;s <code>main</code> entry, fallbacks
-									to <code>process.cwd()</code>).</p>
-								</div>
-								<p>By default, if you have this folder structure:</p>
-								<pre><code><span style="color: #000000">/</span><span style="color: #001080">home</span><span style="color: #000000">/</span><span style="color: #001080">me</span><span style="color: #000000">/</span><span style="color: #001080">my</span><span style="color: #000000">-</span><span style="color: #001080">bot</span>
-<span style="color: #000000">├─ </span><span style="color: #001080">src</span>
-<span style="color: #000000">│  ├─ </span><span style="color: #001080">commands</span>
-<span style="color: #000000">│  ├─ </span><span style="color: #001080">events</span>
-<span style="color: #000000">│  └─ </span><span style="color: #001080">main</span><span style="color: #000000">.</span><span style="color: #001080">js</span>
-<span style="color: #000000">└─ </span><span style="color: #001080">package</span><span style="color: #000000">.</span><span style="color: #001080">json</span>
-</code></pre>
-								<p>And you run <code>node src/main.js</code>, the directories <code>/home/me/my-bot/src/commands</code> and <code>/home/me/my-bot/src/events</code> will
-									be registered for the commands and events stores respectively, since both directories are located in the same
-								directory as your main file.</p>
-								<p><strong>Note</strong>: this also registers directories for all other stores, even if they don&#39;t have a folder, this allows you
-								to create new pieces and hot-load them later anytime.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>rootDirectory: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The root directory to register pieces at.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="use" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> use</h3>
@@ -563,7 +351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/d85921e/src/lib/SapphireClient.ts#L338">src/lib/SapphireClient.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/01f7161/src/lib/SapphireClient.ts#L263">src/lib/SapphireClient.ts:263</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -597,15 +385,6 @@
 								<a href="sapphireclient.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="sapphireclient.html#arguments" class="tsd-kind-icon">arguments</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="sapphireclient.html#commands" class="tsd-kind-icon">commands</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="sapphireclient.html#events" class="tsd-kind-icon">events</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="sapphireclient.html#fetchprefix" class="tsd-kind-icon">fetch<wbr>Prefix</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -615,25 +394,13 @@
 								<a href="sapphireclient.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="sapphireclient.html#preconditions" class="tsd-kind-icon">preconditions</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="sapphireclient.html#stores" class="tsd-kind-icon">stores</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="sapphireclient.html#plugins" class="tsd-kind-icon">plugins</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-								<a href="sapphireclient.html#deregisterstore" class="tsd-kind-icon">deregister<wbr>Store</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="sapphireclient.html#login" class="tsd-kind-icon">login</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-								<a href="sapphireclient.html#registerstore" class="tsd-kind-icon">register<wbr>Store</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="sapphireclient.html#registeruserdirectories" class="tsd-kind-icon">register<wbr>User<wbr>Directories</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="sapphireclient.html#use" class="tsd-kind-icon">use</a>
