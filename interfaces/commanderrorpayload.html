@@ -56,18 +56,26 @@
 					<a href="commanderrorpayload.html">CommandErrorPayload</a>
 				</li>
 			</ul>
-			<h1>Interface CommandErrorPayload</h1>
+			<h1>Interface CommandErrorPayload&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a> = <a href="../classes/args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="commandacceptedpayload.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandAcceptedPayload</a>
+						<a href="commandrunpayload.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandRunPayload</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">CommandErrorPayload</span>
@@ -83,6 +91,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="commanderrorpayload.html#args" class="tsd-kind-icon">args</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="commanderrorpayload.html#command" class="tsd-kind-icon">command</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="commanderrorpayload.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="commanderrorpayload.html#message" class="tsd-kind-icon">message</a></li>
@@ -96,13 +105,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="args" class="tsd-anchor"></a>
+					<h3>args</h3>
+					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="commandrunpayload.html">CommandRunPayload</a>.<a href="commandrunpayload.html#args">args</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L119">src/lib/types/Events.ts:119</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="command" class="tsd-anchor"></a>
 					<h3>command</h3>
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandacceptedpayload.html">CommandAcceptedPayload</a>.<a href="commandacceptedpayload.html#command">command</a></p>
+						<p>Inherited from <a href="commandrunpayload.html">CommandRunPayload</a>.<a href="commandrunpayload.html#command">command</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/55be30a/src/lib/types/Events.ts#L106">src/lib/types/Events.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L103">src/lib/types/Events.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,9 +131,9 @@
 					<h3>context</h3>
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="commandcontext.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandContext</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandacceptedpayload.html">CommandAcceptedPayload</a>.<a href="commandacceptedpayload.html#context">context</a></p>
+						<p>Inherited from <a href="commandrunpayload.html">CommandRunPayload</a>.<a href="commandrunpayload.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/55be30a/src/lib/types/Events.ts#L116">src/lib/types/Events.ts:116</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L115">src/lib/types/Events.ts:115</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,9 +142,9 @@
 					<h3>message</h3>
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandacceptedpayload.html">CommandAcceptedPayload</a>.<a href="commandacceptedpayload.html#message">message</a></p>
+						<p>Inherited from <a href="commandrunpayload.html">CommandRunPayload</a>.<a href="commandrunpayload.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/55be30a/src/lib/types/Events.ts#L105">src/lib/types/Events.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L102">src/lib/types/Events.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,9 +153,9 @@
 					<h3>parameters</h3>
 					<div class="tsd-signature tsd-kind-icon">parameters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandacceptedpayload.html">CommandAcceptedPayload</a>.<a href="commandacceptedpayload.html#parameters">parameters</a></p>
+						<p>Inherited from <a href="commandrunpayload.html">CommandRunPayload</a>.<a href="commandrunpayload.html#parameters">parameters</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/55be30a/src/lib/types/Events.ts#L115">src/lib/types/Events.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L114">src/lib/types/Events.ts:114</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">piece<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/args.html" class="tsd-signature-type" data-tsd-kind="Class">Args</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/55be30a/src/lib/types/Events.ts#L91">src/lib/types/Events.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/fa60b13/src/lib/types/Events.ts#L125">src/lib/types/Events.ts:125</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,9 +183,12 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
 						<a href="commanderrorpayload.html" class="tsd-kind-icon">Command<wbr>Error<wbr>Payload</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="commanderrorpayload.html#args" class="tsd-kind-icon">args</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="commanderrorpayload.html#command" class="tsd-kind-icon">command</a>
 							</li>
