@@ -134,7 +134,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"><a href="event.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="event.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -151,10 +151,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="event.html#_run" class="tsd-kind-icon">_run</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="event.html#_runonce" class="tsd-kind-icon">_run<wbr>Once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="event.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="event.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="event.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="event.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="event.html#run" class="tsd-kind-icon">run</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="event.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="event.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -162,17 +162,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Event&lt;E&gt;<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PieceContext</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/eventoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EventOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Piece.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L51">src/lib/structures/Event.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L51">src/lib/structures/Event.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -203,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">#listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L51">src/lib/structures/Event.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L51">src/lib/structures/Event.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EventEmitter</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L46">src/lib/structures/Event.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L46">src/lib/structures/Event.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,7 +224,7 @@
 					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L47">src/lib/structures/Event.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L47">src/lib/structures/Event.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +234,7 @@
 					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L48">src/lib/structures/Event.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L48">src/lib/structures/Event.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,7 +251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L84">src/lib/structures/Event.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L84">src/lib/structures/Event.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -273,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L93">src/lib/structures/Event.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L93">src/lib/structures/Event.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -286,34 +287,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="onload" class="tsd-anchor"></a>
 					<h3>on<wbr>Load</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Piece.onLoad</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L69">src/lib/structures/Event.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L69">src/lib/structures/Event.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="onunload" class="tsd-anchor"></a>
 					<h3>on<wbr>Unload</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Piece.onUnload</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L73">src/lib/structures/Event.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L73">src/lib/structures/Event.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -330,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L67">src/lib/structures/Event.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L67">src/lib/structures/Event.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -343,17 +346,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Piece.toJSON</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/b69723e/src/lib/structures/Event.ts#L77">src/lib/structures/Event.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/framework/blob/59ddbd6/src/lib/structures/Event.ts#L77">src/lib/structures/Event.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -377,7 +381,7 @@
 					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="event.html" class="tsd-kind-icon">Event</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="event.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -398,16 +402,16 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="event.html#_runonce" class="tsd-kind-icon">_run<wbr>Once</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="event.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="event.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="event.html#run" class="tsd-kind-icon">run</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="event.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 						</ul>
