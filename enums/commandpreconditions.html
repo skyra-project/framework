@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreconditionRunMode | @sapphire/framework</title>
+	<title>CommandPreConditions | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">@sapphire/framework</a>
 				</li>
 				<li>
-					<a href="preconditionrunmode.html">PreconditionRunMode</a>
+					<a href="commandpreconditions.html">CommandPreConditions</a>
 				</li>
 			</ul>
-			<h1>Enumeration PreconditionRunMode</h1>
+			<h1>Enumeration CommandPreConditions</h1>
 		</div>
 	</div>
 </header>
@@ -66,11 +66,11 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The run mode for a <a href="../classes/preconditioncontainerarray.html">PreconditionContainerArray</a>.</p>
+						<p>The available command pre-conditions.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
-						<dd><p>1.0.0</p>
+						<dd><p>2.0.0</p>
 						</dd>
 					</dl>
 				</div>
@@ -82,8 +82,12 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionrunmode.html#parallel" class="tsd-kind-icon">Parallel</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="preconditionrunmode.html#sequential" class="tsd-kind-icon">Sequential</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#cooldown" class="tsd-kind-icon">Cooldown</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#directmessageonly" class="tsd-kind-icon">Direct<wbr>Message<wbr>Only</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#guildonly" class="tsd-kind-icon">Guild<wbr>Only</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#newsonly" class="tsd-kind-icon">News<wbr>Only</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#notsafeforwork" class="tsd-kind-icon">Not<wbr>Safe<wbr>For<wbr>Work</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commandpreconditions.html#textonly" class="tsd-kind-icon">Text<wbr>Only</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,46 +96,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="parallel" class="tsd-anchor"></a>
-					<h3>Parallel</h3>
-					<div class="tsd-signature tsd-kind-icon">Parallel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="cooldown" class="tsd-anchor"></a>
+					<h3>Cooldown</h3>
+					<div class="tsd-signature tsd-kind-icon">Cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Cooldown&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/utils/preconditions/PreconditionContainerArray.ts#L27">src/lib/utils/preconditions/PreconditionContainerArray.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L168">src/lib/structures/Command.ts:168</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>All entries are run in parallel using <code>Promise.all</code>, then the results are processed after all of them have
-							completed.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="sequential" class="tsd-anchor"></a>
-					<h3>Sequential</h3>
-					<div class="tsd-signature tsd-kind-icon">Sequential<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+					<a name="directmessageonly" class="tsd-anchor"></a>
+					<h3>Direct<wbr>Message<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">Direct<wbr>Message<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;DMOnly&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/utils/preconditions/PreconditionContainerArray.ts#L20">src/lib/utils/preconditions/PreconditionContainerArray.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L170">src/lib/structures/Command.ts:170</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The entries are run sequentially, this is the default behaviour and can be slow when doing long asynchronous
-							tasks, but is performance savvy.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>since</dt>
-							<dd><p>1.0.0</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="guildonly" class="tsd-anchor"></a>
+					<h3>Guild<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GuildOnly&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L173">src/lib/structures/Command.ts:173</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="newsonly" class="tsd-anchor"></a>
+					<h3>News<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">News<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;NewsOnly&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L172">src/lib/structures/Command.ts:172</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="notsafeforwork" class="tsd-anchor"></a>
+					<h3>Not<wbr>Safe<wbr>For<wbr>Work</h3>
+					<div class="tsd-signature tsd-kind-icon">Not<wbr>Safe<wbr>For<wbr>Work<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;NSFW&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L169">src/lib/structures/Command.ts:169</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="textonly" class="tsd-anchor"></a>
+					<h3>Text<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">Text<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;TextOnly&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/d39b529/src/lib/structures/Command.ts#L171">src/lib/structures/Command.ts:171</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -148,13 +170,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="preconditionrunmode.html" class="tsd-kind-icon">Precondition<wbr>Run<wbr>Mode</a>
+						<a href="commandpreconditions.html" class="tsd-kind-icon">Command<wbr>Pre<wbr>Conditions</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="preconditionrunmode.html#parallel" class="tsd-kind-icon">Parallel</a>
+								<a href="commandpreconditions.html#cooldown" class="tsd-kind-icon">Cooldown</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="preconditionrunmode.html#sequential" class="tsd-kind-icon">Sequential</a>
+								<a href="commandpreconditions.html#directmessageonly" class="tsd-kind-icon">Direct<wbr>Message<wbr>Only</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="commandpreconditions.html#guildonly" class="tsd-kind-icon">Guild<wbr>Only</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="commandpreconditions.html#newsonly" class="tsd-kind-icon">News<wbr>Only</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="commandpreconditions.html#notsafeforwork" class="tsd-kind-icon">Not<wbr>Safe<wbr>For<wbr>Work</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="commandpreconditions.html#textonly" class="tsd-kind-icon">Text<wbr>Only</a>
 							</li>
 						</ul>
 					</li>
