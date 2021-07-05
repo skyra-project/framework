@@ -166,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L78">src/lib/structures/StoreRegistry.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L78">src/lib/structures/StoreRegistry.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -210,7 +210,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Collection.get</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L85">src/lib/structures/StoreRegistry.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L85">src/lib/structures/StoreRegistry.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -231,7 +231,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Collection.get</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L86">src/lib/structures/StoreRegistry.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L86">src/lib/structures/StoreRegistry.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -256,7 +256,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Collection.has</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L87">src/lib/structures/StoreRegistry.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L87">src/lib/structures/StoreRegistry.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -271,7 +271,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Collection.has</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L88">src/lib/structures/StoreRegistry.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L88">src/lib/structures/StoreRegistry.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,7 +294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L68">src/lib/structures/StoreRegistry.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L68">src/lib/structures/StoreRegistry.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -336,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/49b463e/src/lib/structures/StoreRegistry.ts#L57">src/lib/structures/StoreRegistry.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/e7ce612/src/lib/structures/StoreRegistry.ts#L57">src/lib/structures/StoreRegistry.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,13 +349,13 @@
 								<pre><code><span style="color: #000000">/</span><span style="color: #001080">home</span><span style="color: #000000">/</span><span style="color: #001080">me</span><span style="color: #000000">/</span><span style="color: #001080">my</span><span style="color: #000000">-</span><span style="color: #001080">bot</span>
 <span style="color: #000000">├─ </span><span style="color: #001080">src</span>
 <span style="color: #000000">│  ├─ </span><span style="color: #001080">commands</span>
-<span style="color: #000000">│  ├─ </span><span style="color: #001080">events</span>
+<span style="color: #000000">│  ├─ </span><span style="color: #001080">listeners</span>
 <span style="color: #000000">│  └─ </span><span style="color: #001080">main</span><span style="color: #000000">.</span><span style="color: #001080">js</span>
 <span style="color: #000000">└─ </span><span style="color: #001080">package</span><span style="color: #000000">.</span><span style="color: #001080">json</span>
 </code></pre>
-								<p>And you run <code>node src/main.js</code>, the directories <code>/home/me/my-bot/src/commands</code> and <code>/home/me/my-bot/src/events</code> will
-									be registered for the commands and events stores respectively, since both directories are located in the same
-								directory as your main file.</p>
+								<p>And you run <code>node src/main.js</code>, the directories <code>/home/me/my-bot/src/commands</code> and <code>/home/me/my-bot/src/listeners</code>
+									will be registered for the commands and listeners stores respectively, since both directories are located in the
+								same directory as your main file.</p>
 								<p><strong>Note</strong>: this also registers directories for all other stores, even if they don&#39;t have a folder, this allows you
 								to create new pieces and hot-load them later anytime.</p>
 								<dl class="tsd-comment-tags">
